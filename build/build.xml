@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<!--
+   @marpontes
+   Builds a runnable jar that executes an embedded transformation
+  -->
+
+<project name="PGVme" default="jar" basedir="..">
+	<description>
+        Builds runnable jar that execeutes a Kettle Transformation
+		for local converting some text files into another one.
+    </description>
+	
+	<!-- properties file -->
+	<property file="build/build.properties" />
+
+	<!-- class path used to compile code -->
+	<path id="compile.classpath">
+		<fileset dir="${basedir}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!-- class path used to run code -->
+	<path id="run.classpath">
+	
+		<dirset dir="${classes.dir}"/>
+		<dirset dir="${basedir}/resources"/>
+		<fileset dir="${basedir}/lib">
+			<include name="**/*.jar" />
+		</fileset>		
+	</path>
+	
+	<!-- init timestamp -->
+	<target name="init">
+		<tstamp />
+	</target>
+
+	<!-- compile the code -->
+	<target name="compile" depends="init" description="compile the source ">
+		<mkdir dir="${classes.dir}" />
+		<javac source="1.6" target="1.6" srcdir="${src.dir}" destdir="${classes.dir}" debuglevel="lines,vars,source" debug="true">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+	
+	<!-- clean the dist folder -->
+	<target name="clean" description="clean up">
+		<delete dir="${dist.dir}" verbose="true" />
+	</target>
+	
+	<!-- generates the runnable jar -->
+    <target name="jar" depends="clean,compile">
+        <mkdir dir="${dist.dir}"/>
+
+        <jar destfile="${jar.file}" basedir="${classes.dir}">
+        	<fileset dir="${etl.dir}"/>
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+                <attribute name="Class-Path" value="${manifest.classpath}"/>
+            </manifest>
+        	<zipgroupfileset  dir="${lib.dir}" />
+        </jar>  
+    </target>
+
+
+</project>
