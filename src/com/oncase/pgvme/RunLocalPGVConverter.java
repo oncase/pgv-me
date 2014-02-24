@@ -110,14 +110,8 @@ public class RunLocalPGVConverter {
 		
 		String path = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
 		
-		System.out.println("-----------------------------------------------");
-		System.out.println("JAR Path is : "+path);
-		System.out.println("Separator is : "+File.separator);
-		
 		path = path.substring(0,path.lastIndexOf("/"));
 		
-		System.out.println("Returned : "+path);
-		System.out.println("-----------------------------------------------");
 		return path;
 		
 	}
