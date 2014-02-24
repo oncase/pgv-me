@@ -5,7 +5,7 @@
    Builds a runnable jar that executes an embedded transformation
   -->
 
-<project name="PGVme" default="jar" basedir="..">
+<project name="PGVme" default="move" basedir="..">
 	<description>
         Builds runnable jar that execeutes a Kettle Transformation
 		for local converting some text files into another one.
@@ -62,6 +62,12 @@
         	<zipgroupfileset  dir="${lib.dir}" />
         </jar>  
     </target>
+	
+	<target name="move" depends="jar">
+		<delete file="${test.file}" verbose="true" />
+		<copy file="${jar.file}" tofile="${test.file}" verbose="true" />
+				
+	</target>
 
 
 </project>

@@ -27,6 +27,7 @@
 
 package com.oncase.pgvme;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -84,13 +85,6 @@ public class RunLocalPGVConverter {
 		System.out.println("END OF LOG REPORT");
 		System.out.println("************************************************************************************************");
 	
-		
-		// run a transformation from the repository
-		// NOTE: before running the repository example, you need to make sure that the 
-		// repository and transformation exist, and can be accessed by the user and password used
-		// uncomment and run after you've got a test repository in place
-
-		// instance.runTransformationFromRepository("test-repository", "/home/joe", "parametrized_transformation", "joe", "password");
 
 	}
 
@@ -99,11 +93,33 @@ public class RunLocalPGVConverter {
 	 * This method gives the InputStream to the referenced transformation
 	 * that will be executed.
 	 * */
-	private InputStream getIS() throws IOException{
+	private InputStream getIS(String filename) throws IOException{
 		String jar = getClass().getProtectionDomain().getCodeSource().getLocation().getFile();
-		URL u = new URL("jar:file:" + jar + "!/parametrized_transformation.ktr");
+		URL u = new URL("jar:file:" + jar + "!/"+filename);
 		InputStream in = u.openStream();
 		return in;
+	}
+	
+	/*
+	 * @marpontes
+	 * This method returns the path where the JAR file is.
+	 * This path will be passed down as a parameter to the
+	 * transformation.
+	 * */
+	private String getPathParam(){
+		
+		String path = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+		
+		System.out.println("-----------------------------------------------");
+		System.out.println("JAR Path is : "+path);
+		System.out.println("Separator is : "+File.separator);
+		
+		path = path.substring(0,path.lastIndexOf("/"));
+		
+		System.out.println("Returned : "+path);
+		System.out.println("-----------------------------------------------");
+		return path;
+		
 	}
 	
 	/**
@@ -135,28 +151,10 @@ public class RunLocalPGVConverter {
 			 * I've changed it to receive a InputStream to meet the requirement
 			 * of embedding the ktr file.
 			 * */
-			TransMeta transMeta = new TransMeta(getIS(),null,false,null,null);
+			TransMeta transMeta = new TransMeta(getIS(filename),null,false,null,null);
 			
-			// The next section reports on the declared parameters and sets them to arbitrary values
-			// for demonstration purposes
-			System.out.println("Attempting to read and set named parameters");
-			String[] declaredParameters = transMeta.listParameters();
-			for (int i = 0; i < declaredParameters.length; i++) {
-				String parameterName = declaredParameters[i];
-				
-				// determine the parameter description and default values for display purposes
-				String description = transMeta.getParameterDescription(parameterName);
-				String defaultValue = transMeta.getParameterDefault(parameterName);
-				// set the parameter value to an arbitrary string
-				String parameterValue =  RandomStringUtils.randomAlphanumeric(10);
-				
-				String output = "Setting parameter "+parameterName+" to \""+parameterValue+"\" [description: \""+description+"\", default: \""+defaultValue+"\"]";
-				System.out.println(output);
-				
-				// assign the value to the parameter on the transformation
-				transMeta.setParameterValue(parameterName, parameterValue);
-				
-			}
+			// assign the value to the parameter on the transformation
+			transMeta.setParameterValue("JPATH",getPathParam());			
 			
 			// Creating a transformation object which is the programmatic representation of a transformation 
 			// A transformation object can be executed, report success, etc.
