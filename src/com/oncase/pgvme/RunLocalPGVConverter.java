@@ -27,12 +27,10 @@
 
 package com.oncase.pgvme;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-import org.apache.commons.lang.RandomStringUtils;
 import org.pentaho.di.core.KettleEnvironment;
 import org.pentaho.di.core.Result;
 import org.pentaho.di.core.exception.KettleException;
@@ -71,7 +69,7 @@ public class RunLocalPGVConverter {
 		instance = new RunLocalPGVConverter();
 		
 		// run a transformation from the file system
-		Trans trans = instance.runTransformationFromFileSystem("parametrized_transformation.ktr");
+		Trans trans = instance.runTransformationFromFileSystem("file_parser.ktr");
 		
 		// retrieve logging appender
 		LoggingBuffer appender = KettleLogStore.getAppender();
@@ -148,14 +146,25 @@ public class RunLocalPGVConverter {
 			TransMeta transMeta = new TransMeta(getIS(filename),null,false,null,null);
 			
 			// assign the value to the parameter on the transformation
-			transMeta.setParameterValue("JPATH",getPathParam());			
+			
+			final String source = getPathParam()+"/";
+			final String destination = source+"export/";
+			
+			
+			transMeta.setParameterValue("source",source);
+			transMeta.setParameterValue("destination",destination);
+			
+			System.out.println("Destination --------> "+ destination);
+			System.out.println("Source --------> "+ source);
+			
+			
 			
 			// Creating a transformation object which is the programmatic representation of a transformation 
 			// A transformation object can be executed, report success, etc.
 			Trans transformation = new Trans(transMeta);
 			
 			// adjust the log level
-			transformation.setLogLevel(LogLevel.MINIMAL);
+			transformation.setLogLevel(LogLevel.BASIC);
 
 			System.out.println("\nStarting transformation");
 			
@@ -170,7 +179,7 @@ public class RunLocalPGVConverter {
 			
 			// report on the outcome of the transformation
 			String outcome = "\nTrans "+ filename +" executed "+(result.getNrErrors() == 0?"successfully":"with "+result.getNrErrors()+" errors");
-			System.out.println(outcome);
+			//System.out.println(outcome);
 			
 			return transformation;
 
