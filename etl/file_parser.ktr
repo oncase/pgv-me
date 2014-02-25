@@ -11,12 +11,12 @@
     <parameters>
         <parameter>
             <name>destination</name>
-            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;parser_test&#x2f;export&#x2f;</default_value>
+            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;Abril 2013&#x2f;01. Janeiro&#x2f;exort&#x2f;</default_value>
             <description/>
         </parameter>
         <parameter>
             <name>source</name>
-            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;parser_test&#x2f;</default_value>
+            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;Abril 2013&#x2f;01. Janeiro&#x2f;</default_value>
             <description/>
         </parameter>
     </parameters>
@@ -203,7 +203,6 @@
   <hop> <from>gero constantes 005</from><to>coloca leading zeros</to><enabled>Y</enabled> </hop>
   <hop> <from>gero constantes 020</from><to>coloca leading zeros 2</to><enabled>Y</enabled> </hop>
   <hop> <from>seleciono .</from><to>monto linha 020</to><enabled>Y</enabled> </hop>
-  <hop> <from>vendas</from><to>Calcula caminho relativo e separator</to><enabled>Y</enabled> </hop>
   <hop> <from>coloca leading zeros 2 2</from><to>monta linha 025</to><enabled>Y</enabled> </hop>
   <hop> <from>Select values 3</from><to>coloca leading zeros 2 2</to><enabled>Y</enabled> </hop>
   <hop> <from>monta linha 025</from><to>pego linha e comparador 025</to><enabled>Y</enabled> </hop>
@@ -240,6 +239,8 @@
   <hop> <from>Write to log</from><to>vendas</to><enabled>Y</enabled> </hop>
   <hop> <from>carrego vendas</from><to>Get Variables</to><enabled>Y</enabled> </hop>
   <hop> <from>controi destino</from><to>output</to><enabled>Y</enabled> </hop>
+  <hop> <from>vendas</from><to>If field value is null</to><enabled>Y</enabled> </hop>
+  <hop> <from>If field value is null</from><to>Calcula caminho relativo e separator</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>005</name>
@@ -2267,6 +2268,69 @@
     </step>
 
   <step>
+    <name>output</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator/>
+    <enclosure/>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>Y</fileNameInField>
+    <fileNameField>destino</fileNameField>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>&#x24;&#x7b;destination&#x7d;</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>linha</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>3558</xloc>
+      <yloc>653</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>outputFilename</name>
     <type>Janino</type>
     <description/>
@@ -2919,8 +2983,8 @@
     </step>
 
   <step>
-    <name>output</name>
-    <type>TextFileOutput</type>
+    <name>If field value is null</name>
+    <type>IfNull</type>
     <description/>
     <distribute>Y</distribute>
     <copies>1</copies>
@@ -2928,55 +2992,23 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <separator/>
-    <enclosure/>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>N</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding/>
-    <endedLine/>
-    <fileNameInField>Y</fileNameInField>
-    <fileNameField>destino</fileNameField>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>&#x24;&#x7b;destination&#x7d;</name>
-      <is_command>N</is_command>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
-      <extention>txt</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
+      <replaceAllByValue/>
+      <replaceAllMask/>
+      <selectFields>Y</selectFields>
+      <selectValuesType>N</selectValuesType>
+    <valuetypes>
+      </valuetypes>
     <fields>
       <field>
-        <name>linha</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-    </fields>
+        <name>VLVENDA</name>
+        <value>0</value>
+        <mask/>
+        </field>
+      </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3558</xloc>
-      <yloc>653</yloc>
+      <xloc>198</xloc>
+      <yloc>612</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
