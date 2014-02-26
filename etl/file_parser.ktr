@@ -11,12 +11,12 @@
     <parameters>
         <parameter>
             <name>destination</name>
-            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;Abril 2013&#x2f;01. Janeiro&#x2f;exort&#x2f;</default_value>
+            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;cabral&#x2f;01. Janeiro&#x2f;exort&#x2f;</default_value>
             <description/>
         </parameter>
         <parameter>
             <name>source</name>
-            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;Abril 2013&#x2f;01. Janeiro&#x2f;</default_value>
+            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;cabral&#x2f;01. Janeiro&#x2f;</default_value>
             <description/>
         </parameter>
     </parameters>
@@ -358,6 +358,13 @@
 <value_precision>-1</value_precision>
 <replace_field/>
 </formula>
+       <formula><field_name>VLVENDA</field_name>
+<formula_string>VLVENDA&#x2f;QT</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>2</value_precision>
+<replace_field>VLVENDA</replace_field>
+</formula>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>199</xloc>
@@ -404,8 +411,39 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>417</xloc>
-      <yloc>251</yloc>
+      <xloc>200</xloc>
+      <yloc>259</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>If field value is null</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <replaceAllByValue/>
+      <replaceAllMask/>
+      <selectFields>Y</selectFields>
+      <selectValuesType>N</selectValuesType>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>VLVENDA</name>
+        <value>0</value>
+        <mask/>
+        </field>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>198</xloc>
+      <yloc>612</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1157,8 +1195,8 @@
     </file>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>199</xloc>
-      <yloc>240</yloc>
+      <xloc>203</xloc>
+      <yloc>84</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1302,7 +1340,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca espacos em branco no final&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                    &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading zeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#x2f;&#x2f;------------------------------------------------------&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem empty spaces&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var numero_documento &#x3d; colocaEmpty&#x28;numero_documento&#x29;&#x3b;&#xd;&#xa;numero_documento &#x3d; numero_documento.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var produto_nota &#x3d; colocaEmpty&#x28;produto_nota&#x29;&#x3b;&#xd;&#xa;produto_nota &#x3d; produto_nota.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var PRODUTO_KRAFT &#x3d; colocaEmpty&#x28;PRODUTO_KRAFT&#x29;&#x3b;&#xd;&#xa;PRODUTO_KRAFT &#x3d; PRODUTO_KRAFT.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var ID_APRESENTACAO &#x3d; colocaEmpty&#x28;ID_APRESENTACAO&#x29;&#x3b;&#xd;&#xa;ID_APRESENTACAO &#x3d; ID_APRESENTACAO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta vl_liquido para&#x3a;&#xd;&#xa; &#x2a; 1- muda virgula por ponto para parseFloat&#xd;&#xa; &#x2a; 2- obtem valor unitario, vl_liquido&#x2f;qt_unidades&#xd;&#xa; &#x2a; 3- calcula tamanho do decimal para receber 00, 0 ou nao receber nada no final&#xd;&#xa; &#x2a; 4- retira ponto dos numeros&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var qt_unidades&#x3b;&#xd;&#xa;var vl_liquido&#x3d; vl_liquido.replace&#x28;&#x22;,&#x22;,&#x22;.&#x22;&#x29;&#x3b;&#x2f;&#x2f;mudo virgula para ponto para parseFloat&#xd;&#xa;vl_liquido&#x3d; String&#x28;parseFloat&#x28;vl_liquido&#x29;&#x2f;parseFloat&#x28;qt_unidades&#x29;&#x29;&#x3b; &#x2f;&#x2f;vl_liquido unitario&#xd;&#xa;var tamanho_decimal &#x3d; &#x28;vl_liquido.indexOf&#x28;&#x22;.&#x22;&#x29;&#x21;&#x3d;-1&#x29; &#x3f; &#x28;vl_liquido.substring&#x28;vl_liquido.indexOf&#x28;&#x22;.&#x22;&#x29;,&#x28;vl_liquido.length-1&#x29;&#x29;&#x29;.length &#x3a;0 &#x2f;&#x2f;calcula tamanho decimal&#xd;&#xa;vl_liquido &#x3d; &#x28;tamanho_decimal &#x21;&#x3d; 0&#x29; &#x3f; &#x28;tamanho_decimal&#x3d;&#x3d;1&#x29;&#x3f; vl_liquido&#x2b;&#x27;0&#x27; &#x3a; vl_liquido.substring&#x28;0,vl_liquido.indexOf&#x28;&#x22;.&#x22;&#x29;&#x2b;3&#x29; &#x3a; vl_liquido&#x2b;&#x22;00&#x22;&#x3b;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.replace&#x28;&#x22;.&#x22;,&#x22;&#x22;&#x29;&#x3b;&#x2f;&#x2f;retira ponto do valor ex.&#x3a;12.50 .&#x3a; 1250&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem leadingZero&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;vl_liquido &#x3d; leadingZeros&#x28;vl_liquido&#x29;&#x3b;&#xd;&#xa;var i &#x3d; vl_liquido.length&#x3b;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.substring&#x28;i,i-18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var sequencial_nota &#x3d; leadingZeros&#x28;sequencial_nota&#x29;&#x3b;&#xd;&#xa;i &#x3d; sequencial_nota.length&#x3b;&#xd;&#xa;sequencial_nota &#x3d; sequencial_nota.substring&#x28;i,i-4&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;qt_unidade alem do leadingZero recebe 00 no final&#xd;&#xa;qt_unidades &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;qt_unidades&#x29;&#x2b;String&#x28;&#x22;00&#x22;&#x29;&#x3b;&#xd;&#xa;i &#x3d; qt_unidades.length&#x3b;&#xd;&#xa;qt_unidades &#x3d; qt_unidades.substring&#x28;i,i-13&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var cod_mercador &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca espacos em branco no final&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xa;var vlq &#x3d; qt_unidades&#x3b;&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                    &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading zeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#x2f;&#x2f;------------------------------------------------------&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem empty spaces&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var numero_documento &#x3d; colocaEmpty&#x28;numero_documento&#x29;&#x3b;&#xd;&#xa;numero_documento &#x3d; numero_documento.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var produto_nota &#x3d; colocaEmpty&#x28;produto_nota&#x29;&#x3b;&#xd;&#xa;produto_nota &#x3d; produto_nota.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var PRODUTO_KRAFT &#x3d; colocaEmpty&#x28;PRODUTO_KRAFT&#x29;&#x3b;&#xd;&#xa;PRODUTO_KRAFT &#x3d; PRODUTO_KRAFT.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var ID_APRESENTACAO &#x3d; colocaEmpty&#x28;ID_APRESENTACAO&#x29;&#x3b;&#xd;&#xa;ID_APRESENTACAO &#x3d; ID_APRESENTACAO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta vl_liquido para retirar todos os pontos e virgulas&#xa; &#x2a; O valor liquido ja esta com duas casas decimais, conforme&#xa; &#x2a; configurado em step de importacao de text file&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var qt_unidades&#x3d;qt_unidades.replace&#x28;&#x2f;&#x5c;.&#x2f;g,&#x27;&#x27;&#x29;.replace&#x28;&#x2f;&#x5c;,&#x2f;g,&#x27;&#x27;&#x29;&#x3b;&#x3b;&#xd;&#xa;var vl_liquido&#x3d;vl_liquido.replace&#x28;&#x2f;&#x5c;.&#x2f;g,&#x27;&#x27;&#x29;.replace&#x28;&#x2f;&#x5c;,&#x2f;g,&#x27;&#x27;&#x29;&#x3b;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem leadingZero&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;vl_liquido &#x3d; leadingZeros&#x28;vl_liquido&#x29;&#x3b;&#xd;&#xa;var i &#x3d; vl_liquido.length&#x3b;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.substring&#x28;i,i-18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var sequencial_nota &#x3d; leadingZeros&#x28;sequencial_nota&#x29;&#x3b;&#xd;&#xa;i &#x3d; sequencial_nota.length&#x3b;&#xd;&#xa;sequencial_nota &#x3d; sequencial_nota.substring&#x28;i,i-4&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;qt_unidade alem do leadingZero recebe 00 no final&#xd;&#xa;qt_unidades &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;qt_unidades&#x29;&#x3b;&#xd;&#xa;i &#x3d; qt_unidades.length&#x3b;&#xd;&#xa;qt_unidades &#x3d; qt_unidades.substring&#x28;i,i-13&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var cod_mercador &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>numero_documento</name>
         <rename>numero_documento</rename>
         <type>String</type>
@@ -1333,6 +1371,12 @@
         <length>-1</length>
         <precision>-1</precision>
         <replace>Y</replace>
+      </field>      <field>        <name>vlq</name>
+        <rename>vlq</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
       </field>      <field>        <name>qt_unidades</name>
         <rename>qt_unidades</rename>
         <type>String</type>
@@ -1592,6 +1636,30 @@
         <length>-2</length>
         <precision>-2</precision>
         <conversion_mask>yyyyMMdd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>VLVENDA</name>
+        <rename>VLVENDA</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>QT</name>
+        <rename>QT</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <encoding/>
         <decimal_symbol/>
@@ -2723,7 +2791,7 @@
     <rownum>N</rownum>
     <rownumByFile>N</rownumByFile>
     <rownum_field/>
-    <format>DOS</format>
+    <format>mixed</format>
     <encoding/>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
@@ -2890,11 +2958,11 @@
       </field>
       <field>
         <name>QT</name>
-        <type>Integer</type>
-        <format>&#x23;</format>
+        <type>Number</type>
+        <format>&#x23;,&#x23;&#x23;0.00</format>
         <currency>&#x24;</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <nullif>-</nullif>
         <ifnull/>
         <position>-1</position>
@@ -2905,11 +2973,11 @@
       </field>
       <field>
         <name>VLVENDA</name>
-        <type>String</type>
-        <format>&#x23;.&#x23;</format>
+        <type>Number</type>
+        <format>&#x23;,&#x23;&#x23;0.00</format>
         <currency>&#x24;</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <nullif>-</nullif>
         <ifnull/>
         <position>-1</position>
@@ -2978,37 +3046,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>199</xloc>
       <yloc>451</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>If field value is null</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <replaceAllByValue/>
-      <replaceAllMask/>
-      <selectFields>Y</selectFields>
-      <selectValuesType>N</selectValuesType>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>VLVENDA</name>
-        <value>0</value>
-        <mask/>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>198</xloc>
-      <yloc>612</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
