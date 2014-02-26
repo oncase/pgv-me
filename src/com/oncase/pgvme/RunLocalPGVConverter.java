@@ -41,10 +41,8 @@ import org.pentaho.di.trans.Trans;
 import org.pentaho.di.trans.TransMeta;
 
 /**
- * This class demonstrates how to load and execute a PDI transformation.
- * It covers loading from both file system and repositories, 
- * as well as setting parameters prior to execution, and evaluating
- * the result.
+ * RunLocalPGVConverter simply executes a .ktr file that lives
+ * inside of the JAR bundle thata contains the class.
  */
 public class RunLocalPGVConverter {
 
@@ -65,10 +63,10 @@ public class RunLocalPGVConverter {
 			return;
 		}
 		
-		// Create an instance of this demo class for convenience
+		// Create an instance of this class for convenience
 		instance = new RunLocalPGVConverter();
 		
-		// run a transformation from the file system
+		// run the transformation from inside of the JAR
 		Trans trans = instance.runTransformationFromFileSystem("file_parser.ktr");
 		
 		// retrieve logging appender
@@ -86,11 +84,13 @@ public class RunLocalPGVConverter {
 
 	}
 
-	/*
-	 * @marpontes
+	/**
 	 * This method gives the InputStream to the referenced transformation
 	 * that will be executed.
-	 * */
+	 * @author marpontes
+	 * @param filename the file contained inside of the jar file with its path from the root
+	 * @return the InputStream object that contains the transformation XML metadata
+	 */
 	private InputStream getIS(String filename) throws IOException{
 		String jar = getClass().getProtectionDomain().getCodeSource().getLocation().getFile();
 		URL u = new URL("jar:file:" + jar + "!/"+filename);
@@ -98,12 +98,13 @@ public class RunLocalPGVConverter {
 		return in;
 	}
 	
-	/*
-	 * @marpontes
+	/**
 	 * This method returns the path where the JAR file is.
 	 * This path will be passed down as a parameter to the
 	 * transformation.
-	 * */
+	 * @author marpontes
+	 * @return the path on the filesystem till the JAR file
+	 */
 	private String getPathParam(){
 		
 		String path = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
@@ -117,13 +118,13 @@ public class RunLocalPGVConverter {
 	/**
 	 * This method executes a transformation defined in a ktr file
 	 * 
-	 * It demonstrates the following:
+	 * It does the following:
 	 * 
-	 * - Loading a transformation definition from a ktr file
-	 * - Setting named parameters for the transformation
-	 * - Setting the log level of the transformation
-	 * - Executing the transformation, waiting for it to finish
-	 * - Examining the result of the transformation
+	 * - Creates the Transformation metadata from a ktr contained in the JAR
+	 * - Sets up and passes down to the transMeta, the parameters defined
+	 * - Sets up the log level of the transformation
+	 * - Executes the transformation, waiting for it to finish
+	 * - Examines the result of the transformation
 	 * 
 	 * @param filename the file containing the transformation to execute (ktr file)
 	 * @return the transformation that was executed, or null if there was an error
@@ -179,7 +180,7 @@ public class RunLocalPGVConverter {
 			
 			// report on the outcome of the transformation
 			String outcome = "\nTrans "+ filename +" executed "+(result.getNrErrors() == 0?"successfully":"with "+result.getNrErrors()+" errors");
-			//System.out.println(outcome);
+			System.out.println(outcome);
 			
 			return transformation;
 
