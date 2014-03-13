@@ -7,16 +7,11 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#x2f;</directory>
+    <directory>&#x2f;home&#x2f;daniella&#x2f;carga_flex</directory>
     <parameters>
         <parameter>
-            <name>destination</name>
-            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;cabral&#x2f;01. Janeiro&#x2f;exort&#x2f;</default_value>
-            <description/>
-        </parameter>
-        <parameter>
-            <name>source</name>
-            <default_value>&#x2f;Users&#x2f;marcellopontes&#x2f;Desktop&#x2f;cabral&#x2f;01. Janeiro&#x2f;</default_value>
+            <name>JPATH</name>
+            <default_value>C&#x3a;&#x5c;TEMP&#x5c;PGVME</default_value>
             <description/>
         </parameter>
     </parameters>
@@ -93,10 +88,157 @@
     </clusterschemas>
   <created_user>-</created_user>
   <created_date>2014&#x2f;02&#x2f;21 16&#x3a;21&#x3a;47.808</created_date>
-  <modified_user>marcello</modified_user>
-  <modified_date>2014&#x2f;02&#x2f;25 11&#x3a;03&#x3a;36.653</modified_date>
+  <modified_user>daniella</modified_user>
+  <modified_date>2014&#x2f;03&#x2f;13 12&#x3a;20&#x3a;01.260</modified_date>
   </info>
   <notepads>
+    <notepad>
+      <note>cod_mercador eh engessado &#xd;&#xa;na transformacao.&#xd;&#xa;&#xd;&#xa;numero_documento eh um &#xd;&#xa;checksum utilizando&#x3a;&#xd;&#xa;    - cod_mercador&#xd;&#xa;    - cod_pdv&#xd;&#xa;    - cod_vendedor&#xd;&#xa;    - data_emissao</note>
+      <xloc>613</xloc>
+      <yloc>427</yloc>
+      <width>159</width>
+      <heigth>129</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>8</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>255</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Descarto logo de cara&#xa;quem n&#xe3;o &#xe9; num&#xe9;rico,&#xa;no campo de quantid.</note>
+      <xloc>508</xloc>
+      <yloc>1837</yloc>
+      <width>177</width>
+      <heigth>64</heigth>
+      <fontname>CourierNewPSMT</fontname>
+      <fontsize>12</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>153</backgroundcolorgreen>
+      <backgroundcolorblue>51</backgroundcolorblue>
+      <bordercolorred>255</bordercolorred>
+      <bordercolorgreen>255</bordercolorgreen>
+      <bordercolorblue>255</bordercolorblue>
+      <drawshadow>N</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Descarto tamb&#xe9;m as&#xa;linhas que s&#xe3;o totali-&#xa;zadoras.</note>
+      <xloc>674</xloc>
+      <yloc>1993</yloc>
+      <width>166</width>
+      <heigth>64</heigth>
+      <fontname>CourierNewPSMT</fontname>
+      <fontsize>12</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>153</backgroundcolorgreen>
+      <backgroundcolorblue>51</backgroundcolorblue>
+      <bordercolorred>255</bordercolorred>
+      <bordercolorgreen>255</bordercolorgreen>
+      <bordercolorblue>255</bordercolorblue>
+      <drawshadow>N</drawshadow>
+    </notepad>
+    <notepad>
+      <note>entrada arquivo vendas &#x28;sellout&#x29;</note>
+      <xloc>464</xloc>
+      <yloc>92</yloc>
+      <width>168</width>
+      <heigth>23</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>8</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>159</backgroundcolorgreen>
+      <backgroundcolorblue>159</backgroundcolorblue>
+      <bordercolorred>255</bordercolorred>
+      <bordercolorgreen>128</bordercolorgreen>
+      <bordercolorblue>128</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>entrada arquivo clientes &#x28;pdv&#x29;</note>
+      <xloc>1506</xloc>
+      <yloc>87</yloc>
+      <width>156</width>
+      <heigth>23</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>8</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>159</backgroundcolorgreen>
+      <backgroundcolorblue>159</backgroundcolorblue>
+      <bordercolorred>255</bordercolorred>
+      <bordercolorgreen>128</bordercolorgreen>
+      <bordercolorblue>128</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>entrada arquivo estoque</note>
+      <xloc>480</xloc>
+      <yloc>1385</yloc>
+      <width>128</width>
+      <heigth>23</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>8</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>159</backgroundcolorgreen>
+      <backgroundcolorblue>159</backgroundcolorblue>
+      <bordercolorred>255</bordercolorred>
+      <bordercolorgreen>128</bordercolorgreen>
+      <bordercolorblue>128</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>saida txt consumivel</note>
+      <xloc>2801</xloc>
+      <yloc>98</yloc>
+      <width>108</width>
+      <heigth>23</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>8</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>159</backgroundcolorgreen>
+      <backgroundcolorblue>159</backgroundcolorblue>
+      <bordercolorred>255</bordercolorred>
+      <bordercolorgreen>128</bordercolorgreen>
+      <bordercolorblue>128</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <connection>
     <name>AgileBI</name>
@@ -104,7 +246,7 @@
     <type>MONETDB</type>
     <access>Native</access>
     <database>pentaho-instaview</database>
-    <port>50006</port>
+    <port>50000</port>
     <username>monetdb</username>
     <password>Encrypted 2be98afc86aa7f2e4cb14a17edb86abd8</password>
     <servername/>
@@ -114,7 +256,499 @@
       <attribute><code>EXTRA_OPTION_INFOBRIGHT.characterEncoding</code><attribute>UTF-8</attribute></attribute>
       <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
       <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>50006</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50000</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ande_dw</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>ande_dw</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_dw</name>
+    <server>186.215.202.154</server>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>caern_dw</database>
+    <port>6000</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>6000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_dw_monetdb</name>
+    <server>10.18.240.91</server>
+    <type>MONETDB</type>
+    <access>JNDI</access>
+    <database>caern_monetdb</database>
+    <port>50000</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_dw_temp</name>
+    <server/>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>caern_dw_temp_dw</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_dw_temp_dw</name>
+    <server/>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>caern_dw_temp_dw</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_dw_teste_localhost</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>caern_dw_teste</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_staging</name>
+    <server/>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>caern_staging</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_trans</name>
+    <server>186.215.202.154</server>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>caern_trans</database>
+    <port>6000</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>6000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>caern_transacional</name>
+    <server>186.215.202.154</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>gsan_comercial_caern</database>
+    <port>6000</port>
+    <username>oncase</username>
+    <password>Encrypted 2be98afc86aa7f2aba51aaf63fbc8fe88</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>6000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>conn_localhost_teste_email</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>teste_email</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>cookbook</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>cookbook</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>greenplum_caern</name>
+    <server>192.168.201.137</server>
+    <type>GREENPLUM</type>
+    <access>Native</access>
+    <database>caern_dw</database>
+    <port>5432</port>
+    <username>gpadmin</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>gsan_comercial_caern_220</name>
+    <server>192.168.64.220</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>gsan_comercial_caern</database>
+    <port>5432</port>
+    <username>oncase</username>
+    <password>Encrypted 2be98afc86aa7f2aba51aaf63fbc8fe88</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>H2</name>
+    <server/>
+    <type>GENERIC</type>
+    <access>Native</access>
+    <database/>
+    <port>1521</port>
+    <username>H2</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>CUSTOM_DRIVER_CLASS</code><attribute>org.h2.Driver</attribute></attribute>
+      <attribute><code>CUSTOM_URL</code><attribute>jdbc&#x3a;h2&#x3a;tcp&#x3a;&#x2f;&#x2f;localhost&#x3a;6006&#x2f;mem&#x3a;MyDatabase&#x3b;DB_CLOSE_DELAY&#x3d;-1</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>hibernate_antigo</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>hibernate</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>InfinyDB</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>kraft_dw</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>kraft_dw</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>kraft_fix</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw_20131018</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>kraft_old</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw_old</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>kraft_postgres</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>kraft_rs</name>
+    <server/>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>kraft_rs</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>caern_dw</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
     </attributes>
   </connection>
   <connection>
@@ -123,6 +757,28 @@
     <type>POSTGRESQL</type>
     <access>Native</access>
     <database>hibernate</database>
+    <port>5434</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5434</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_kraft</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw</database>
     <port>5432</port>
     <username>postgres</username>
     <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
@@ -140,14 +796,58 @@
     </attributes>
   </connection>
   <connection>
-    <name>pentaho_olap</name>
+    <name>Monetdb</name>
+    <server>localhost</server>
+    <type>MONETDB</type>
+    <access>Native</access>
+    <database>demo</database>
+    <port>50006</port>
+    <username>monetdb</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb14a17edb86abd8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50006</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MonetDb_Connection</name>
+    <server>192.168.64.220</server>
+    <type>MONETDB</type>
+    <access>Native</access>
+    <database>caern_dw</database>
+    <port>5000</port>
+    <username>monetdb</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb14a17edb86abd8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mysql_conn</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>pentaho_olap</database>
+    <database>wcm_dwh</database>
     <port>3306</port>
     <username>root</username>
-    <password>Encrypted </password>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -165,14 +865,267 @@
     </attributes>
   </connection>
   <connection>
+    <name>mysql_jndi_test</name>
+    <server/>
+    <type>MYSQL</type>
+    <access>JNDI</access>
+    <database>mysql_test</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>pentaho_olap</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw</database>
+    <port>5434</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5434</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>pentaho_olap_bsb</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>pentaho_oltp</database>
+    <port>5434</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5434</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
     <name>pentaho_oltp</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>pentaho_oltp</database>
+    <port>3999</port>
+    <username>pentaho</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3999</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>pentaho_oltp_bsb</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>pentaho_oltp</database>
+    <port>3999</port>
+    <username>pentaho_admin</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3999</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PocoLoco</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>PocoLoco</database>
+    <port>5432</port>
+    <username>pocoloco</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb16ad7fd29dacd5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>pqs_fc</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>pqs_fc</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb16bd64d980aac9</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PQS_PROTHEUS_HOMOLOGACAO</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>PQS_PROTHEUS_HOMOLOGACAO</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>producao</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>producao_kraft</name>
+    <server>mdlz.oncase.com.br</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>kraft_dw</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>sancho_conn</name>
+    <server>192.168.0.102</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>total_dw</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_POSTGRESQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_POSTGRESQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>sancho_test_conn</name>
+    <server>sancho</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>test</database>
     <port>3306</port>
     <username>root</username>
-    <password>Encrypted </password>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -189,58 +1142,146 @@
       <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
     </attributes>
   </connection>
+  <connection>
+    <name>spedcase_rosario</name>
+    <server>localhost</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>spedcase_rosario</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4a417ad71cd97fe88</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>teste_monetdb</name>
+    <server>10.18.240.91</server>
+    <type>MONETDB</type>
+    <access>JNDI</access>
+    <database>teste_monetdb</database>
+    <port>50000</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>tribunaadv</name>
+    <server>192.168.25.134</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>Tribunaadv</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2bcdb</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
   <order>
-  <hop> <from>025</from><to>gero constantes 025</to><enabled>Y</enabled> </hop>
+  <hop> <from>025</from><to>gero constantes &#x5b;025&#x5d;</to><enabled>Y</enabled> </hop>
   <hop> <from>junta</from><to>ordeno por comparador</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values</from><to>005</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values</from><to>020</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values</from><to>025</to><enabled>Y</enabled> </hop>
-  <hop> <from>pego linhas e comparador 005</from><to>junta</to><enabled>Y</enabled> </hop>
-  <hop> <from>pego linha e comparador 020</from><to>junta</to><enabled>Y</enabled> </hop>
-  <hop> <from>monto linha 020</from><to>pego linha e comparador 020</to><enabled>Y</enabled> </hop>
-  <hop> <from>coloca leading zeros</from><to>seleciono</to><enabled>Y</enabled> </hop>
-  <hop> <from>coloca leading zeros 2</from><to>seleciono .</to><enabled>Y</enabled> </hop>
-  <hop> <from>gero constantes 005</from><to>coloca leading zeros</to><enabled>Y</enabled> </hop>
-  <hop> <from>gero constantes 020</from><to>coloca leading zeros 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>seleciono .</from><to>monto linha 020</to><enabled>Y</enabled> </hop>
-  <hop> <from>coloca leading zeros 2 2</from><to>monta linha 025</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values 3</from><to>coloca leading zeros 2 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>monta linha 025</from><to>pego linha e comparador 025</to><enabled>Y</enabled> </hop>
-  <hop> <from>pego linha e comparador 025</from><to>junta</to><enabled>Y</enabled> </hop>
-  <hop> <from>monta linha 005</from><to>pego linhas e comparador 005</to><enabled>Y</enabled> </hop>
-  <hop> <from>seleciono</from><to>monta linha 005</to><enabled>Y</enabled> </hop>
-  <hop> <from>Unique rows</from><to>gero constantes 005</to><enabled>Y</enabled> </hop>
-  <hop> <from>Unique rows 2</from><to>gero constantes 020</to><enabled>Y</enabled> </hop>
+  <hop> <from>renomeio e formato data_emissao</from><to>005</to><enabled>Y</enabled> </hop>
+  <hop> <from>renomeio e formato data_emissao</from><to>020</to><enabled>Y</enabled> </hop>
+  <hop> <from>renomeio e formato data_emissao</from><to>025</to><enabled>Y</enabled> </hop>
+  <hop> <from>pego linha, comparador e cod_mercador &#x5b;005&#x5d;</from><to>junta</to><enabled>Y</enabled> </hop>
+  <hop> <from>pego linha, comparador e cod_mercador &#x5b;020&#x5d;</from><to>junta</to><enabled>Y</enabled> </hop>
+  <hop> <from>monto linha &#x5b;020&#x5d;</from><to>pego linha, comparador e cod_mercador &#x5b;020&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>ajusto dados &#x5b;005&#x5d;</from><to>seleciono &#x5b;005&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>ajusto dados &#x5b;020&#x5d;</from><to>seleciono &#x5b;020&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>gero constantes &#x5b;005&#x5d;</from><to>ajusto dados &#x5b;005&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>gero constantes &#x5b;020&#x5d;</from><to>ajusto dados &#x5b;020&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>seleciono &#x5b;020&#x5d;</from><to>monto linha &#x5b;020&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>ajusto dados &#x5b;025&#x5d;</from><to>monto linha &#x5b;025&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>cast sequencial</from><to>ajusto dados &#x5b;025&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>monto linha &#x5b;025&#x5d;</from><to>pego linha, comparador e cod_mercador &#x5b;025&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>pego linha, comparador e cod_mercador &#x5b;025&#x5d;</from><to>junta</to><enabled>Y</enabled> </hop>
+  <hop> <from>monto linha &#x5b;005&#x5d;</from><to>pego linha, comparador e cod_mercador &#x5b;005&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>seleciono &#x5b;005&#x5d;</from><to>monto linha &#x5b;005&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>cod_mercador e cod_pdv unicos</from><to>gero constantes &#x5b;005&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>numero_documento unico</from><to>gero constantes &#x5b;020&#x5d;</to><enabled>Y</enabled> </hop>
   <hop> <from>numero_documento</from><to>ordeno stream</to><enabled>Y</enabled> </hop>
-  <hop> <from>ordeno stream</from><to>Select values</to><enabled>Y</enabled> </hop>
-  <hop> <from>005</from><to>Unique rows</to><enabled>Y</enabled> </hop>
-  <hop> <from>020</from><to>Unique rows 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>gero constantes 025</from><to>sequencial_nota 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>sequencial_nota 2</from><to>Select values 3</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values</from><to>010</to><enabled>Y</enabled> </hop>
-  <hop> <from>carrego pdvs</from><to>Stream lookup</to><enabled>Y</enabled> </hop>
-  <hop> <from>010</from><to>Sort rows</to><enabled>Y</enabled> </hop>
-  <hop> <from>Sort rows</from><to>Unique rows 3</to><enabled>Y</enabled> </hop>
-  <hop> <from>Unique rows 3</from><to>Stream lookup</to><enabled>Y</enabled> </hop>
-  <hop> <from>Stream lookup</from><to>seleciono 010</to><enabled>Y</enabled> </hop>
-  <hop> <from>seleciono 010</from><to>gero constantes 010</to><enabled>Y</enabled> </hop>
-  <hop> <from>gero constantes 010</from><to>leadingZeros 010</to><enabled>Y</enabled> </hop>
-  <hop> <from>leadingZeros 010</from><to>monto linha 010</to><enabled>Y</enabled> </hop>
-  <hop> <from>monto linha 010</from><to>pego linhas e comparador 010</to><enabled>Y</enabled> </hop>
-  <hop> <from>pego linhas e comparador 010</from><to>junta</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calcula caminho relativo e separator</from><to>data_hoje, batch_id</to><enabled>Y</enabled> </hop>
-  <hop> <from>data_hoje, batch_id</from><to>data_hoje yyyy&#x2f;MM&#x2f;dd</to><enabled>Y</enabled> </hop>
-  <hop> <from>outputFilename</from><to>numero_documento</to><enabled>Y</enabled> </hop>
-  <hop> <from>data_hoje yyyy&#x2f;MM&#x2f;dd</from><to>cod_mercador</to><enabled>Y</enabled> </hop>
-  <hop> <from>cod_mercador</from><to>outputFilename</to><enabled>Y</enabled> </hop>
-  <hop> <from>ordeno por comparador</from><to>capturo variavel path destino</to><enabled>Y</enabled> </hop>
-  <hop> <from>capturo variavel path destino</from><to>controi destino</to><enabled>Y</enabled> </hop>
-  <hop> <from>Get Variables</from><to>Write to log</to><enabled>Y</enabled> </hop>
-  <hop> <from>Write to log</from><to>vendas</to><enabled>Y</enabled> </hop>
-  <hop> <from>carrego vendas</from><to>Get Variables</to><enabled>Y</enabled> </hop>
-  <hop> <from>controi destino</from><to>output</to><enabled>Y</enabled> </hop>
-  <hop> <from>vendas</from><to>If field value is null</to><enabled>Y</enabled> </hop>
-  <hop> <from>If field value is null</from><to>Calcula caminho relativo e separator</to><enabled>Y</enabled> </hop>
+  <hop> <from>ordeno stream</from><to>renomeio e formato data_emissao</to><enabled>Y</enabled> </hop>
+  <hop> <from>005</from><to>cod_mercador e cod_pdv unicos</to><enabled>Y</enabled> </hop>
+  <hop> <from>020</from><to>numero_documento unico</to><enabled>Y</enabled> </hop>
+  <hop> <from>gero constantes &#x5b;025&#x5d;</from><to>sequencial_nota</to><enabled>Y</enabled> </hop>
+  <hop> <from>sequencial_nota</from><to>cast sequencial</to><enabled>Y</enabled> </hop>
+  <hop> <from>renomeio e formato data_emissao</from><to>010</to><enabled>Y</enabled> </hop>
+  <hop> <from>carrego pdvs</from><to>pego info pdv</to><enabled>Y</enabled> </hop>
+  <hop> <from>010</from><to>ordeno pelo pdv_codigo</to><enabled>Y</enabled> </hop>
+  <hop> <from>ordeno pelo pdv_codigo</from><to>pdv_codigo unico</to><enabled>Y</enabled> </hop>
+  <hop> <from>pdv_codigo unico</from><to>pego info pdv</to><enabled>Y</enabled> </hop>
+  <hop> <from>gero constantes &#x5b;010&#x5d;</from><to>ajusto dados &#x5b;010&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>ajusto dados &#x5b;010&#x5d;</from><to>monto linha &#x5b;010&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>monto linha &#x5b;010&#x5d;</from><to>pego linha, comparador e cod_mercador &#x5b;010&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>pego linha, comparador e cod_mercador &#x5b;010&#x5d;</from><to>junta</to><enabled>Y</enabled> </hop>
+  <hop> <from>ordeno por comparador</from><to>capturo JPATH</to><enabled>Y</enabled> </hop>
+  <hop> <from>constroi destino</from><to>output</to><enabled>Y</enabled> </hop>
+  <hop> <from>cod_mercador</from><to>numero_documento</to><enabled>Y</enabled> </hop>
+  <hop> <from>vendas</from><to>cod_mercador</to><enabled>Y</enabled> </hop>
+  <hop> <from>data_hoje yyyyMMddHHmmss</from><to>outputFilename</to><enabled>Y</enabled> </hop>
+  <hop> <from>outputFilename</from><to>constroi destino</to><enabled>Y</enabled> </hop>
+  <hop> <from>capturo JPATH</from><to>data_hoje e batch_id</to><enabled>Y</enabled> </hop>
+  <hop> <from>data_hoje e batch_id</from><to>data_hoje yyyyMMddHHmmss</to><enabled>Y</enabled> </hop>
+  <hop> <from>Avalia conteudo do qtd_estoque</from><to>valor do campo de quantidade eh num&#xe9;rico&#x3f;</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculo um sequencial para determinar 1st row</from><to>dummyJoinKey</to><enabled>Y</enabled> </hop>
+  <hop> <from>Capturo a planilha incluindo cabecalho - que vai determinar a data do estoque</from><to>Calculo um sequencial para determinar 1st row</to><enabled>Y</enabled> </hop>
+  <hop> <from>Eh linha totalizadora&#x3f;</from><to>Sai pra l&#xe1; voc&#xea; tamb&#xe9;m</to><enabled>Y</enabled> </hop>
+  <hop> <from>Eh linha totalizadora&#x3f;</from><to>Show do Milh&#xe3;o&#x21;</to><enabled>Y</enabled> </hop>
+  <hop> <from>Get the date</from><to>String operations</to><enabled>Y</enabled> </hop>
+  <hop> <from>Is this the 1st row&#x3f;</from><to>Projeta</to><enabled>Y</enabled> </hop>
+  <hop> <from>Is this the 1st row&#x3f;</from><to>Then this will become a DATE</to><enabled>Y</enabled> </hop>
+  <hop> <from>Now a safe cast</from><to>Get the date</to><enabled>Y</enabled> </hop>
+  <hop> <from>Projection</from><to>allToString</to><enabled>Y</enabled> </hop>
+  <hop> <from>Projeta</from><to>Avalia conteudo do qtd_estoque</to><enabled>Y</enabled> </hop>
+  <hop> <from>Show do Milh&#xe3;o&#x21;</from><to>Get the date</to><enabled>Y</enabled> </hop>
+  <hop> <from>String operations</from><to>Projection</to><enabled>Y</enabled> </hop>
+  <hop> <from>Then this will become a DATE</from><to>Now a safe cast</to><enabled>Y</enabled> </hop>
+  <hop> <from>Vem pra c&#xe1;</from><to>Eh linha totalizadora&#x3f;</to><enabled>Y</enabled> </hop>
+  <hop> <from>dummyJoinKey</from><to>Is this the 1st row&#x3f;</to><enabled>Y</enabled> </hop>
+  <hop> <from>valor do campo de quantidade eh num&#xe9;rico&#x3f;</from><to>Ent&#xe3;o XAU</to><enabled>Y</enabled> </hop>
+  <hop> <from>valor do campo de quantidade eh num&#xe9;rico&#x3f;</from><to>Vem pra c&#xe1;</to><enabled>Y</enabled> </hop>
+  <hop> <from>renomeio e formato data_emissao</from><to>030</to><enabled>Y</enabled> </hop>
+  <hop> <from>030</from><to>gero constantes &#x5b;030&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>allToString</from><to>lookup fluxo principal</to><enabled>Y</enabled> </hop>
+  <hop> <from>gero constantes &#x5b;030&#x5d;</from><to>lookup fluxo principal</to><enabled>Y</enabled> </hop>
+  <hop> <from>lookup fluxo principal</from><to>ajusto dados &#x5b;030&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>ajusto dados &#x5b;030&#x5d;</from><to>monto linha &#x5b;030&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>monto linha &#x5b;030&#x5d;</from><to>pego linha, comparador e cod_mercador &#x5b;030&#x5d;</to><enabled>Y</enabled> </hop>
+  <hop> <from>pego linha, comparador e cod_mercador &#x5b;030&#x5d;</from><to>junta</to><enabled>Y</enabled> </hop>
+  <hop> <from>pego info pdv</from><to>gero constantes &#x5b;010&#x5d;</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>005</name>
@@ -254,8 +1295,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1497</xloc>
-      <yloc>451</yloc>
+      <xloc>1039</xloc>
+      <yloc>531</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -272,8 +1313,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1500</xloc>
-      <yloc>240</yloc>
+      <xloc>1039</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -290,8 +1331,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1497</xloc>
-      <yloc>657</yloc>
+      <xloc>1039</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -308,8 +1349,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1503</xloc>
-      <yloc>865</yloc>
+      <xloc>1039</xloc>
+      <yloc>960</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -335,121 +1376,14 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1640</xloc>
-      <yloc>1358</yloc>
+      <xloc>1212</xloc>
+      <yloc>1690</yloc>
       <draw>N</draw>
       </GUI>
     </step>
 
   <step>
-    <name>Calcula caminho relativo e separator</name>
-    <type>Janino</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-       <formula><field_name>separator</field_name>
-<formula_string>java.lang.System.getProperty&#x28;&#x22;file.separator&#x22;&#x29;</formula_string>
-<value_type>String</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<replace_field/>
-</formula>
-       <formula><field_name>VLVENDA</field_name>
-<formula_string>VLVENDA&#x2f;QT</formula_string>
-<value_type>Number</value_type>
-<value_length>-1</value_length>
-<value_precision>2</value_precision>
-<replace_field>VLVENDA</replace_field>
-</formula>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>199</xloc>
-      <yloc>865</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Get Variables</name>
-    <type>GetVariable</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>
-      <field>
-        <name>LOG_SOURCE</name>
-        <variable>&#x24;&#x7b;source&#x7d;</variable>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>LOG_DESTINATION</name>
-        <variable>&#x24;&#x7b;destination&#x7d;</variable>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>200</xloc>
-      <yloc>259</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>If field value is null</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <replaceAllByValue/>
-      <replaceAllMask/>
-      <selectFields>Y</selectFields>
-      <selectValuesType>N</selectValuesType>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>VLVENDA</name>
-        <value>0</value>
-        <mask/>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>198</xloc>
-      <yloc>612</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Select values</name>
+    <name>renomeio e formato data_emissao</name>
     <type>SelectValues</type>
     <description/>
     <distribute>N</distribute>
@@ -494,10 +1428,6 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
       <meta>        <name>DATAFINAL</name>
         <rename>data_emissao</rename>
@@ -513,14 +1443,14 @@
         <storage_type/>
       </meta>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1264</xloc>
-      <yloc>657</yloc>
+      <xloc>738</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>Select values 3</name>
+    <name>cast sequencial</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -581,10 +1511,6 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
       <meta>        <name>sequencial_nota</name>
         <rename>sequencial_nota</rename>
@@ -600,202 +1526,14 @@
         <storage_type/>
       </meta>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2046</xloc>
-      <yloc>865</yloc>
+      <xloc>1660</xloc>
+      <yloc>960</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>Sort rows</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
-      <prefix>out</prefix>
-      <sort_size>1000000</sort_size>
-      <free_memory/>
-      <compress>N</compress>
-      <compress_variable/>
-      <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>pdv_codigo</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1637</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Stream lookup</name>
-    <type>StreamLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <from>carrego pdvs</from>
-    <input_sorted>N</input_sorted>
-    <preserve_memory>Y</preserve_memory>
-    <sorted_list>N</sorted_list>
-    <integer_pair>N</integer_pair>
-    <lookup>
-      <key>
-        <name>pdv_codigo</name>
-        <field>pdv_codigo</field>
-      </key>
-      <value>
-        <name>pdv_razao_social</name>
-        <rename>pdv_razao_social</rename>
-        <default>NA</default>
-        <type>String</type>
-      </value>
-      <value>
-        <name>pdv_cnpj</name>
-        <rename>pdv_cnpj</rename>
-        <default>NA</default>
-        <type>String</type>
-      </value>
-      <value>
-        <name>pdv_cep</name>
-        <rename>pdv_cep</rename>
-        <default>NA</default>
-        <type>String</type>
-      </value>
-      <value>
-        <name>pdv_uf</name>
-        <rename>pdv_uf</rename>
-        <default>NA</default>
-        <type>String</type>
-      </value>
-    </lookup>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1911</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Unique rows</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <count_rows>Y</count_rows>
-      <count_field>ok</count_field>
-      <reject_duplicate_row>N</reject_duplicate_row>
-      <error_description/>
-    <fields>      <field>        <name>cod_mercador</name>
-        <case_insensitive>N</case_insensitive>
-        </field>      <field>        <name>vendedor_cod_cadastro</name>
-        <case_insensitive>N</case_insensitive>
-        </field>      </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1678</xloc>
-      <yloc>451</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Unique rows 2</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <count_rows>Y</count_rows>
-      <count_field>ok</count_field>
-      <reject_duplicate_row>N</reject_duplicate_row>
-      <error_description/>
-    <fields>      <field>        <name>numero_documento</name>
-        <case_insensitive>N</case_insensitive>
-        </field>      </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1678</xloc>
-      <yloc>657</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Unique rows 3</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <count_rows>N</count_rows>
-      <count_field/>
-      <reject_duplicate_row>N</reject_duplicate_row>
-      <error_description/>
-    <fields>      <field>        <name>pdv_codigo</name>
-        <case_insensitive>N</case_insensitive>
-        </field>      </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1774</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Write to log</name>
-    <type>WriteToLog</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <loglevel>log_level_basic</loglevel>
-      <displayHeader>Y</displayHeader>
-      <logmessage>&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#xa;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;</logmessage>
-    <fields>
-      <field>
-        <name>LOG_SOURCE</name>
-        </field>
-      <field>
-        <name>LOG_DESTINATION</name>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>199</xloc>
-      <yloc>369</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>capturo variavel path destino</name>
+    <name>capturo JPATH</name>
     <type>GetVariable</type>
     <description/>
     <distribute>Y</distribute>
@@ -806,8 +1544,8 @@
            </partitioning>
     <fields>
       <field>
-        <name>destination</name>
-        <variable>&#x24;&#x7b;destination&#x7d;</variable>
+        <name>jpath</name>
+        <variable>&#x24;&#x7b;JPATH&#x7d;</variable>
         <type>String</type>
         <format/>
         <currency/>
@@ -820,8 +1558,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3296</xloc>
-      <yloc>452</yloc>
+      <xloc>2827</xloc>
+      <yloc>1036</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -838,7 +1576,7 @@
            </partitioning>
     <accept_filenames>N</accept_filenames>
     <passing_through_fields>N</passing_through_fields>
-    <accept_field>filename</accept_field>
+    <accept_field/>
     <accept_stepname/>
     <separator>,</separator>
     <enclosure>&#x22;</enclosure>
@@ -863,11 +1601,11 @@
     <encoding/>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>&#x24;&#x7b;source&#x7d;</name>
+      <name>&#x24;&#x7b;JPATH&#x7d;</name>
       <filemask>&#x28;&#x3f;i&#x29;.&#x2a;&#x5c;.txt&#x24;</filemask>
       <exclude_filemask/>
       <file_required>N</file_required>
-      <include_subfolders>Y</include_subfolders>
+      <include_subfolders>N</include_subfolders>
       <type>CSV</type>
       <compression>None</compression>
     </file>
@@ -936,7 +1674,7 @@
       </field>
       <field>
         <name>desc</name>
-        <type>String</type>
+        <type>Date</type>
         <format>dd&#x2f;MM&#x2f;yyyy</format>
         <currency>&#x24;</currency>
         <decimal>.</decimal>
@@ -951,7 +1689,7 @@
       </field>
       <field>
         <name>desc</name>
-        <type>String</type>
+        <type>Date</type>
         <format>dd&#x2f;MM&#x2f;yyyy</format>
         <currency>&#x24;</currency>
         <decimal>.</decimal>
@@ -1011,7 +1749,7 @@
       </field>
       <field>
         <name>dec</name>
-        <type>String</type>
+        <type>Integer</type>
         <format>&#x23;</format>
         <currency>&#x24;</currency>
         <decimal>.</decimal>
@@ -1026,7 +1764,7 @@
       </field>
       <field>
         <name>dec</name>
-        <type>String</type>
+        <type>Integer</type>
         <format>&#x23;</format>
         <currency>&#x24;</currency>
         <decimal>.</decimal>
@@ -1041,7 +1779,7 @@
       </field>
       <field>
         <name>desc</name>
-        <type>String</type>
+        <type>Integer</type>
         <format>&#x23;</format>
         <currency>&#x24;</currency>
         <decimal>.</decimal>
@@ -1056,7 +1794,7 @@
       </field>
       <field>
         <name>desc</name>
-        <type>String</type>
+        <type>Integer</type>
         <format>&#x23;</format>
         <currency>&#x24;</currency>
         <decimal>.</decimal>
@@ -1116,8 +1854,8 @@
       </field>
       <field>
         <name>desc</name>
-        <type>String</type>
-        <format/>
+        <type>Number</type>
+        <format>&#x23;.&#x23;</format>
         <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
@@ -1146,7 +1884,7 @@
     <line_number_files_destination_directory/>
     <line_number_files_extension>line</line_number_files_extension>
     <date_format_lenient>Y</date_format_lenient>
-    <date_format_locale>en_US</date_format_locale>
+    <date_format_locale>pt_BR</date_format_locale>
     <shortFileFieldName/>
     <pathFieldName/>
     <hiddenFieldName/>
@@ -1157,46 +1895,8 @@
     <sizeFieldName/>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1911</xloc>
-      <yloc>42</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>carrego vendas</name>
-    <type>GetFileNames</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <filter>
-      <filterfiletype>all_files</filterfiletype>
-    </filter>
-    <doNotFailIfNoFile>N</doNotFailIfNoFile>
-    <rownum>N</rownum>
-    <isaddresult>N</isaddresult>
-    <filefield>N</filefield>
-    <rownum_field/>
-    <filename_Field/>
-    <wildcard_Field/>
-    <exclude_wildcard_Field/>
-    <dynamic_include_subfolders>N</dynamic_include_subfolders>
-    <limit>0</limit>
-    <file>
-      <name>&#x24;&#x7b;source&#x7d;</name>
-      <filemask>&#x28;&#x3f;i&#x29;.&#x2a;&#x5c;.csv&#x24;</filemask>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-    </file>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>203</xloc>
-      <yloc>84</yloc>
+      <xloc>1570</xloc>
+      <yloc>145</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1219,21 +1919,47 @@
         <currency/>
         <decimal/>
         <group/>
-        <nullif>156048706</nullif>
+        <nullif>14273817</nullif>
         <length>0</length>
         <precision>0</precision>
       </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>521</xloc>
-      <yloc>451</yloc>
+      <xloc>533</xloc>
+      <yloc>401</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>coloca leading zeros</name>
+    <name>cod_mercador e cod_pdv unicos</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <count_rows>Y</count_rows>
+      <count_field>ok</count_field>
+      <reject_duplicate_row>N</reject_duplicate_row>
+      <error_description/>
+    <fields>      <field>        <name>cod_mercador</name>
+        <case_insensitive>N</case_insensitive>
+        </field>      <field>        <name>vendedor_cod_cadastro</name>
+        <case_insensitive>N</case_insensitive>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1246</xloc>
+      <yloc>531</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ajusto dados &#x5b;005&#x5d;</name>
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
@@ -1246,7 +1972,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading zeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                 &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var vendedor_cod_cadastro &#x3d; colocaEmpty&#x28;vendedor_cod_cadastro&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;vendedor_cod_cadastro &#x3d; vendedor_cod_cadastro.substring&#x28;0,5&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading zeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;var cod_mercador &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Funcoes&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca Empty no final&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                 &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca leading zeros&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Implementacao&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem colocaEmpty&#xd;&#xa;var vendedor_cod_cadastro &#x3d; colocaEmpty&#x28;vendedor_cod_cadastro&#x29;&#x3b;&#xd;&#xa;vendedor_cod_cadastro &#x3d; vendedor_cod_cadastro.substring&#x28;0,5&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem leadingZero&#xd;&#xa;var cod_mercador &#x3d; leadingZeros&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;var i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>vendedor_cod_cadastro</name>
         <rename>vendedor_cod_cadastro</rename>
         <type>String</type>
@@ -1261,14 +1987,14 @@
         <replace>Y</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2068</xloc>
-      <yloc>451</yloc>
+      <xloc>1660</xloc>
+      <yloc>531</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>coloca leading zeros 2</name>
+    <name>ajusto dados &#x5b;020&#x5d;</name>
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
@@ -1281,7 +2007,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Retira virgula de numeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;var removeVirgula &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s.replace&#x28;&#x22;,&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                 &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var numero_documento &#x3d; colocaEmpty&#x28;numero_documento&#x29;&#x3b;&#xd;&#xa;numero_documento &#x3d; numero_documento.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var vl_liquido &#x3d; removeVirgula&#x28;vl_liquido&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading zeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;vl_liquido &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;vl_liquido&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var i &#x3d; vl_liquido.length&#x3b;&#xd;&#xa;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.substring&#x28;i,i-18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var cod_mercador &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading empty&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;var COND_PAGO &#x3d; colocaEmpty&#x28;COND_PAGO&#x29;&#x3b;&#xd;&#xa;var pdv_codigo &#x3d; colocaEmpty&#x28;pdv_codigo&#x29;&#x3b;&#xd;&#xa;var vendedor_cod_cadastro &#x3d; colocaEmpty&#x28;vendedor_cod_cadastro&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;COND_PAGO &#x3d; COND_PAGO.substring&#x28;0,3&#x29;&#xd;&#xa;pdv_codigo &#x3d; pdv_codigo.substring&#x28;0,14&#x29;&#x3b;&#xd;&#xa;vendedor_cod_cadastro &#x3d; vendedor_cod_cadastro.substring&#x28;0,5&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var check &#x3d; pdv_codigo.length&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Funcoes&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca Empty no final&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                 &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca leading zeros&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Implementacao&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;calcula tamanho do decimal para vl_liquido receber 00, 0 ou nao receber nada no final&#xd;&#xa;var tamanho_decimal &#x3d; &#x28;vl_liquido.indexOf&#x28;&#x22;,&#x22;&#x29;&#x21;&#x3d;-1&#x29; &#x3f; &#x28;vl_liquido.substring&#x28;vl_liquido.indexOf&#x28;&#x22;,&#x22;&#x29;,&#x28;vl_liquido.length-1&#x29;&#x29;&#x29;.length &#x3a;0 &#x2f;&#x2f;calcula tamanho decimal&#xd;&#xa;vl_liquido &#x3d; &#x28;tamanho_decimal &#x21;&#x3d; 0&#x29; &#x3f; &#x28;tamanho_decimal&#x3d;&#x3d;1&#x29;&#x3f; vl_liquido&#x2b;&#x27;0&#x27; &#x3a; vl_liquido.substring&#x28;0,&#x28;vl_liquido.indexOf&#x28;&#x22;,&#x22;&#x29;&#x2b;3&#x29;&#x29; &#x3a; vl_liquido&#x2b;&#x22;00&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;campos que recebem removeVirgula&#xd;&#xa;var vl_liquido &#x3d; vl_liquido.replace&#x28;&#x22;,&#x22;,&#x22;&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;campos que recem colocaEmpty&#xd;&#xa;var numero_documento &#x3d; colocaEmpty&#x28;numero_documento&#x29;&#x3b;&#xd;&#xa;numero_documento &#x3d; numero_documento.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var COND_PAGO &#x3d; colocaEmpty&#x28;COND_PAGO&#x29;&#x3b;&#xd;&#xa;COND_PAGO &#x3d; COND_PAGO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_codigo &#x3d; colocaEmpty&#x28;pdv_codigo&#x29;&#x3b;&#xd;&#xa;pdv_codigo &#x3d; pdv_codigo.substring&#x28;0,14&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var vendedor_cod_cadastro &#x3d; colocaEmpty&#x28;vendedor_cod_cadastro&#x29;&#x3b;&#xd;&#xa;vendedor_cod_cadastro &#x3d; vendedor_cod_cadastro.substring&#x28;0,5&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;campos que recebem leadingZeros&#xd;&#xa;var cod_mercador &#x3d; leadingZeros&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;var i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;vl_liquido &#x3d; leadingZeros&#x28;vl_liquido&#x29;&#x3b;&#xd;&#xa;i &#x3d; vl_liquido.length&#x3b;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.substring&#x28;i,i-18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>COND_PAGO</name>
         <rename>COND_PAGO</rename>
         <type>String</type>
@@ -1300,12 +2026,6 @@
         <length>-1</length>
         <precision>-1</precision>
         <replace>Y</replace>
-      </field>      <field>        <name>vl_liquido</name>
-        <rename>vl_liquido</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>Y</replace>
       </field>      <field>        <name>cod_mercador</name>
         <rename>cod_mercador</rename>
         <type>String</type>
@@ -1318,16 +2038,22 @@
         <length>-1</length>
         <precision>-1</precision>
         <replace>Y</replace>
+      </field>      <field>        <name>vl_liquido</name>
+        <rename>vl_liquido</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2046</xloc>
-      <yloc>657</yloc>
+      <xloc>1660</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>coloca leading zeros 2 2</name>
+    <name>ajusto dados &#x5b;025&#x5d;</name>
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
@@ -1340,7 +2066,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca espacos em branco no final&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xa;var vlq &#x3d; qt_unidades&#x3b;&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                    &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading zeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#x2f;&#x2f;------------------------------------------------------&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem empty spaces&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var numero_documento &#x3d; colocaEmpty&#x28;numero_documento&#x29;&#x3b;&#xd;&#xa;numero_documento &#x3d; numero_documento.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var produto_nota &#x3d; colocaEmpty&#x28;produto_nota&#x29;&#x3b;&#xd;&#xa;produto_nota &#x3d; produto_nota.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var PRODUTO_KRAFT &#x3d; colocaEmpty&#x28;PRODUTO_KRAFT&#x29;&#x3b;&#xd;&#xa;PRODUTO_KRAFT &#x3d; PRODUTO_KRAFT.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var ID_APRESENTACAO &#x3d; colocaEmpty&#x28;ID_APRESENTACAO&#x29;&#x3b;&#xd;&#xa;ID_APRESENTACAO &#x3d; ID_APRESENTACAO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta vl_liquido para retirar todos os pontos e virgulas&#xa; &#x2a; O valor liquido ja esta com duas casas decimais, conforme&#xa; &#x2a; configurado em step de importacao de text file&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var qt_unidades&#x3d;qt_unidades.replace&#x28;&#x2f;&#x5c;.&#x2f;g,&#x27;&#x27;&#x29;.replace&#x28;&#x2f;&#x5c;,&#x2f;g,&#x27;&#x27;&#x29;&#x3b;&#x3b;&#xd;&#xa;var vl_liquido&#x3d;vl_liquido.replace&#x28;&#x2f;&#x5c;.&#x2f;g,&#x27;&#x27;&#x29;.replace&#x28;&#x2f;&#x5c;,&#x2f;g,&#x27;&#x27;&#x29;&#x3b;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem leadingZero&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;vl_liquido &#x3d; leadingZeros&#x28;vl_liquido&#x29;&#x3b;&#xd;&#xa;var i &#x3d; vl_liquido.length&#x3b;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.substring&#x28;i,i-18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var sequencial_nota &#x3d; leadingZeros&#x28;sequencial_nota&#x29;&#x3b;&#xd;&#xa;i &#x3d; sequencial_nota.length&#x3b;&#xd;&#xa;sequencial_nota &#x3d; sequencial_nota.substring&#x28;i,i-4&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;qt_unidade alem do leadingZero recebe 00 no final&#xd;&#xa;qt_unidades &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;qt_unidades&#x29;&#x3b;&#xd;&#xa;i &#x3d; qt_unidades.length&#x3b;&#xd;&#xa;qt_unidades &#x3d; qt_unidades.substring&#x28;i,i-13&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var cod_mercador &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Funcoes&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca Empty no final&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                                                   &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca leading zeros&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Implementacao&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem colocaEmpty&#xd;&#xa;var numero_documento &#x3d; colocaEmpty&#x28;numero_documento&#x29;&#x3b;&#xd;&#xa;numero_documento &#x3d; numero_documento.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var produto_nota &#x3d; colocaEmpty&#x28;produto_nota&#x29;&#x3b;&#xd;&#xa;produto_nota &#x3d; produto_nota.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var PRODUTO_KRAFT &#x3d; colocaEmpty&#x28;PRODUTO_KRAFT&#x29;&#x3b;&#xd;&#xa;PRODUTO_KRAFT &#x3d; PRODUTO_KRAFT.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var ID_APRESENTACAO &#x3d; colocaEmpty&#x28;ID_APRESENTACAO&#x29;&#x3b;&#xd;&#xa;ID_APRESENTACAO &#x3d; ID_APRESENTACAO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta vl_liquido para&#x3a;&#xd;&#xa; &#x2a; 1- muda virgula por ponto para parseFloat&#xd;&#xa; &#x2a; 2- obtem valor unitario, vl_liquido&#x2f;qt_unidades&#xd;&#xa; &#x2a; 3- calcula tamanho do decimal para receber 00, 0 ou nao receber nada no final&#xd;&#xa; &#x2a; 4- retira ponto dos numeros&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var qt_unidades&#x3b;&#xd;&#xa;var vl_liquido&#x3d; vl_liquido.replace&#x28;&#x22;,&#x22;,&#x22;.&#x22;&#x29;&#x3b;&#x2f;&#x2f;mudo virgula para ponto para parseFloat&#xd;&#xa;vl_liquido&#x3d; String&#x28;parseFloat&#x28;vl_liquido&#x29;&#x2f;parseFloat&#x28;qt_unidades&#x29;&#x29;&#x3b; &#x2f;&#x2f;vl_liquido unitario&#xd;&#xa;var tamanho_decimal &#x3d; &#x28;vl_liquido.indexOf&#x28;&#x22;.&#x22;&#x29;&#x21;&#x3d;-1&#x29; &#x3f; &#x28;vl_liquido.substring&#x28;vl_liquido.indexOf&#x28;&#x22;.&#x22;&#x29;,&#x28;vl_liquido.length-1&#x29;&#x29;&#x29;.length &#x3a;0 &#x2f;&#x2f;calcula tamanho decimal&#xd;&#xa;vl_liquido &#x3d; &#x28;tamanho_decimal &#x21;&#x3d; 0&#x29; &#x3f; &#x28;tamanho_decimal&#x3d;&#x3d;1&#x29;&#x3f; vl_liquido&#x2b;&#x27;0&#x27; &#x3a; vl_liquido.substring&#x28;0,vl_liquido.indexOf&#x28;&#x22;.&#x22;&#x29;&#x2b;3&#x29; &#x3a; vl_liquido&#x2b;&#x22;00&#x22;&#x3b;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.replace&#x28;&#x22;.&#x22;,&#x22;&#x22;&#x29;&#x3b;&#x2f;&#x2f;retira ponto do valor ex.&#x3a;12.50 .&#x3a; 1250&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem leadingZeros&#xd;&#xa;vl_liquido &#x3d; leadingZeros&#x28;vl_liquido&#x29;&#x3b;&#xd;&#xa;var i &#x3d; vl_liquido.length&#x3b;&#xd;&#xa;vl_liquido &#x3d; vl_liquido.substring&#x28;i,i-18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var sequencial_nota &#x3d; leadingZeros&#x28;sequencial_nota&#x29;&#x3b;&#xd;&#xa;i &#x3d; sequencial_nota.length&#x3b;&#xd;&#xa;sequencial_nota &#x3d; sequencial_nota.substring&#x28;i,i-4&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var cod_mercador &#x3d; leadingZeros&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;qt_unidades &#x3d; leadingZeros&#x28;qt_unidades&#x29;&#x2b;&#x22;00&#x22;&#x3b; &#x2f;&#x2f;qt_unidade alem do leadingZero recebe 00 no final&#xd;&#xa;i &#x3d; qt_unidades.length&#x3b;&#xd;&#xa;qt_unidades &#x3d; qt_unidades.substring&#x28;i,i-13&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>numero_documento</name>
         <rename>numero_documento</rename>
         <type>String</type>
@@ -1371,12 +2097,6 @@
         <length>-1</length>
         <precision>-1</precision>
         <replace>Y</replace>
-      </field>      <field>        <name>vlq</name>
-        <rename>vlq</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
       </field>      <field>        <name>qt_unidades</name>
         <rename>qt_unidades</rename>
         <type>String</type>
@@ -1397,14 +2117,14 @@
         <replace>Y</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2227</xloc>
-      <yloc>865</yloc>
+      <xloc>1867</xloc>
+      <yloc>960</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>controi destino</name>
+    <name>constroi destino</name>
     <type>ConcatFields</type>
     <description/>
     <distribute>Y</distribute>
@@ -1477,205 +2197,14 @@
     </ConcatFields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3549</xloc>
-      <yloc>452</yloc>
+      <xloc>2838</xloc>
+      <yloc>417</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>data_hoje yyyy&#x2f;MM&#x2f;dd</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>      <field>        <name>filename</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>short_filename</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>path</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>type</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>exists</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>ishidden</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>isreadable</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>iswriteable</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>lastmodifiedtime</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>size</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>extension</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>uri</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>rooturi</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>CODCLI</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>CLIENTE</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>CODUSUR</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>RCA</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>CODSUPERVISOR</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>SUPERVISOR</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>CODFORNEC</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>FORNECEDOR</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>CODPROD</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>DESCRICAO</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>QT</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>VLVENDA</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>DATAINICIAL</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>DATAFINAL</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>separator</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>batch_id</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>data_hoje</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>DATAFINAL</name>
-        <rename>data_arquivo</rename>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>        <select_unspecified>N</select_unspecified>
-      <meta>        <name>data_hoje</name>
-        <rename>data_hoje</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyyMMddHHmmss</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>      <meta>        <name>data_arquivo</name>
-        <rename>data_arquivo</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyyMMdd</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>      <meta>        <name>VLVENDA</name>
-        <rename>VLVENDA</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>      <meta>        <name>QT</name>
-        <rename>QT</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>521</xloc>
-      <yloc>663</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>data_hoje, batch_id</name>
+    <name>data_hoje e batch_id</name>
     <type>SystemInfo</type>
     <description/>
     <distribute>Y</distribute>
@@ -1696,14 +2225,45 @@
       </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>521</xloc>
-      <yloc>865</yloc>
+      <xloc>3113</xloc>
+      <yloc>1036</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>gero constantes 005</name>
+    <name>data_hoje yyyyMMddHHmmss</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>data_hoje</name>
+        <rename>data_hoje</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyyMMddHHmmss</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>3115</xloc>
+      <yloc>722</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>gero constantes &#x5b;005&#x5d;</name>
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
@@ -1738,14 +2298,14 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1859</xloc>
-      <yloc>451</yloc>
+      <xloc>1453</xloc>
+      <yloc>531</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>gero constantes 010</name>
+    <name>gero constantes &#x5b;010&#x5d;</name>
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
@@ -1813,14 +2373,14 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2185</xloc>
-      <yloc>240</yloc>
+      <xloc>1747</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>gero constantes 020</name>
+    <name>gero constantes &#x5b;020&#x5d;</name>
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
@@ -1875,17 +2435,6 @@
         <precision>0</precision>
       </field>
       <field>
-        <name>VL_LIQUIDO</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif>000000000000000666</nullif>
-        <length>0</length>
-        <precision>0</precision>
-      </field>
-      <field>
         <name>QT_LINHAS</name>
         <type>String</type>
         <format/>
@@ -1921,14 +2470,14 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1859</xloc>
-      <yloc>657</yloc>
+      <xloc>1453</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>gero constantes 025</name>
+    <name>gero constantes &#x5b;025&#x5d;</name>
     <type>Constant</type>
     <description/>
     <distribute>N</distribute>
@@ -2018,8 +2567,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1678</xloc>
-      <yloc>865</yloc>
+      <xloc>1246</xloc>
+      <yloc>960</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2036,14 +2585,14 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2906</xloc>
-      <yloc>657</yloc>
+      <xloc>2646</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>leadingZeros 010</name>
+    <name>ajusto dados &#x5b;010&#x5d;</name>
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
@@ -2056,7 +2605,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca espacos em branco no final&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                                                                           &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Coloca leading zeros&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#x2f;&#x2f;------------------------------------------------------&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem espacos em branco no final&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var pdv_codigo &#x3d; colocaEmpty&#x28;pdv_codigo&#x29;&#x3b;&#xd;&#xa;pdv_codigo &#x3d; pdv_codigo.substring&#x28;0,14&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_uf &#x3d; colocaEmpty&#x28;pdv_uf&#x29;&#x3b;&#xd;&#xa;pdv_uf &#x3d; pdv_uf.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_razao_social &#x3d; colocaEmpty&#x28;pdv_razao_social&#x29;&#x3b;&#xd;&#xa;pdv_razao_social &#x3d; pdv_razao_social.substring&#x28;0,35&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var vendedor_cod_cadastro &#x3d; colocaEmpty&#x28;vendedor_cod_cadastro&#x29;&#x3b;&#xd;&#xa;vendedor_cod_cadastro &#x3d; vendedor_cod_cadastro.substring&#x28;0,5&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_cep &#x3d; pdv_cep.replace&#x28;new RegExp&#x28;&#x22;&#x5b;&#x5e;0-9&#x5d;&#x22;,&#x22;g&#x22;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#x2f;&#x2f;deixa apenas digitos no cep&#xd;&#xa;pdv_cep &#x3d; colocaEmpty&#x28;pdv_cep&#x29;&#x3b;&#xd;&#xa;pdv_cep &#x3d; pdv_cep.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_cnpj &#x3d; pdv_cnpj.replace&#x28;new RegExp&#x28;&#x22;&#x5b;&#x5e;0-9&#x5d;&#x22;,&#x22;g&#x22;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#x2f;&#x2f;deixa apenas digitos no cnpj&#xd;&#xa;pdv_cnpj &#x3d; colocaEmpty&#x28;pdv_cnpj&#x29;&#x3b;&#xd;&#xa;pdv_cnpj &#x3d; pdv_cnpj.substring&#x28;0,15&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var ENDERECO &#x3d; colocaEmpty&#x28;ENDERECO&#x29;&#x3b;&#xd;&#xa;ENDERECO &#x3d; ENDERECO.substring&#x28;0,75&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var COND_PAGO &#x3d; colocaEmpty&#x28;COND_PAGO&#x29;&#x3b;&#xd;&#xa;COND_PAGO &#x3d; COND_PAGO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var CATEG_CLIE &#x3d; colocaEmpty&#x28;CATEG_CLIE&#x29;&#x3b;&#xd;&#xa;CATEG_CLIE &#x3d; CATEG_CLIE.substring&#x28;0,8&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa; &#x2a; Ajusta campos para receberem leadingZero&#xd;&#xa; &#x2a;&#x2f;&#xd;&#xa;var cod_mercador &#x3d; String&#x28;&#x22;00000000000000000000&#x22;&#x29;&#x2b;String&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;var i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;TESTES&#xd;&#xa;var tamanho &#x3d; pdv_razao_social.length&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Funcoes&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca Empty no final&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                                                                                     &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca leading zeros&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Implementacao&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem colocaEmpty&#xd;&#xa;var pdv_codigo &#x3d; colocaEmpty&#x28;pdv_codigo&#x29;&#x3b;&#xd;&#xa;pdv_codigo &#x3d; pdv_codigo.substring&#x28;0,14&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_uf &#x3d; colocaEmpty&#x28;pdv_uf&#x29;&#x3b;&#xd;&#xa;pdv_uf &#x3d; pdv_uf.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_razao_social &#x3d; colocaEmpty&#x28;pdv_razao_social&#x29;&#x3b;&#xd;&#xa;pdv_razao_social &#x3d; pdv_razao_social.substring&#x28;0,35&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var vendedor_cod_cadastro &#x3d; colocaEmpty&#x28;vendedor_cod_cadastro&#x29;&#x3b;&#xd;&#xa;vendedor_cod_cadastro &#x3d; vendedor_cod_cadastro.substring&#x28;0,5&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_cep &#x3d; pdv_cep.replace&#x28;new RegExp&#x28;&#x22;&#x5b;&#x5e;0-9&#x5d;&#x22;,&#x22;g&#x22;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#x2f;&#x2f;deixa apenas digitos no cep&#xd;&#xa;pdv_cep &#x3d; colocaEmpty&#x28;pdv_cep&#x29;&#x3b;&#xd;&#xa;pdv_cep &#x3d; pdv_cep.substring&#x28;0,16&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var pdv_cnpj &#x3d; pdv_cnpj.replace&#x28;new RegExp&#x28;&#x22;&#x5b;&#x5e;0-9&#x5d;&#x22;,&#x22;g&#x22;&#x29;,&#x22;&#x22;&#x29;&#x3b;&#x2f;&#x2f;deixa apenas digitos no cnpj&#xd;&#xa;pdv_cnpj &#x3d; colocaEmpty&#x28;pdv_cnpj&#x29;&#x3b;&#xd;&#xa;pdv_cnpj &#x3d; pdv_cnpj.substring&#x28;0,15&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var ENDERECO &#x3d; colocaEmpty&#x28;ENDERECO&#x29;&#x3b;&#xd;&#xa;ENDERECO &#x3d; ENDERECO.substring&#x28;0,75&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var COND_PAGO &#x3d; colocaEmpty&#x28;COND_PAGO&#x29;&#x3b;&#xd;&#xa;COND_PAGO &#x3d; COND_PAGO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var CATEG_CLIE &#x3d; colocaEmpty&#x28;CATEG_CLIE&#x29;&#x3b;&#xd;&#xa;CATEG_CLIE &#x3d; CATEG_CLIE.substring&#x28;0,8&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem leadingZeros&#xd;&#xa;var cod_mercador &#x3d; leadingZeros&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;var i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>pdv_codigo</name>
         <rename>pdv_codigo</rename>
         <type>String</type>
@@ -2119,14 +2668,14 @@
         <replace>Y</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2322</xloc>
-      <yloc>240</yloc>
+      <xloc>1924</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>monta linha 005</name>
+    <name>monto linha &#x5b;005&#x5d;</name>
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
@@ -2144,14 +2693,14 @@
 </formula>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2454</xloc>
-      <yloc>451</yloc>
+      <xloc>2074</xloc>
+      <yloc>531</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>monta linha 025</name>
+    <name>monto linha &#x5b;025&#x5d;</name>
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
@@ -2169,14 +2718,14 @@
 </formula>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2454</xloc>
-      <yloc>865</yloc>
+      <xloc>2074</xloc>
+      <yloc>960</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>monto linha 010</name>
+    <name>monto linha &#x5b;010&#x5d;</name>
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
@@ -2186,7 +2735,7 @@
            <schema_name/>
            </partitioning>
        <formula><field_name>linha</field_name>
-<formula_string>comparador &#x2b; cod_mercador &#x2b; pdv_codigo &#x2b; pdv_razao_social &#x2b; ENDERECO &#x2b; pdv_uf &#x2b; pdv_cep &#x2b; DT_INCLUSAO &#x2b; vendedor_cod_cadastro &#x2b; COND_PAGO &#x2b; LIM_CREDITO &#x2b; pdv_cnpj &#x2b; CATEG_CLIE</formula_string>
+<formula_string>comparador &#x2b; cod_mercador &#x2b; pdv_codigo &#x2b; pdv_razao_social &#x2b; ENDERECO &#x2b; pdv_uf &#x2b; pdv_cep &#x2b; data_emissao &#x2b; vendedor_cod_cadastro &#x2b; COND_PAGO &#x2b; LIM_CREDITO &#x2b; pdv_cnpj &#x2b; CATEG_CLIE</formula_string>
 <value_type>String</value_type>
 <value_length>-1</value_length>
 <value_precision>-1</value_precision>
@@ -2194,14 +2743,14 @@
 </formula>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2459</xloc>
-      <yloc>240</yloc>
+      <xloc>2101</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>monto linha 020</name>
+    <name>monto linha &#x5b;020&#x5d;</name>
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
@@ -2211,7 +2760,7 @@
            <schema_name/>
            </partitioning>
        <formula><field_name>linha</field_name>
-<formula_string>comparador&#x2b;cod_mercador&#x2b;numero_documento&#x2b;tipo_documento&#x2b;data_emissao&#x2b;DT_VENCIMENTO&#x2b;pdv_codigo&#x2b;vendedor_cod_cadastro&#x2b;COND_PAGO&#x2b;VL_LIQUIDO_1&#x2b;QT_LINHAS&#x2b;VL_ICMS&#x2b;VL_TOT_BONIF</formula_string>
+<formula_string>comparador&#x2b;cod_mercador&#x2b;numero_documento&#x2b;tipo_documento&#x2b;data_emissao&#x2b;DT_VENCIMENTO&#x2b;pdv_codigo&#x2b;vendedor_cod_cadastro&#x2b;COND_PAGO&#x2b;vl_liquido&#x2b;QT_LINHAS&#x2b;VL_ICMS&#x2b;VL_TOT_BONIF</formula_string>
 <value_type>String</value_type>
 <value_length>-1</value_length>
 <value_precision>-1</value_precision>
@@ -2219,8 +2768,8 @@
 </formula>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2454</xloc>
-      <yloc>657</yloc>
+      <xloc>2074</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2255,8 +2804,64 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1095</xloc>
-      <yloc>451</yloc>
+      <xloc>533</xloc>
+      <yloc>561</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>numero_documento unico</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <count_rows>Y</count_rows>
+      <count_field>ok</count_field>
+      <reject_duplicate_row>N</reject_duplicate_row>
+      <error_description/>
+    <fields>      <field>        <name>numero_documento</name>
+        <case_insensitive>N</case_insensitive>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1246</xloc>
+      <yloc>722</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ordeno pelo pdv_codigo</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>pdv_codigo</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1216</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2287,8 +2892,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3296</xloc>
-      <yloc>657</yloc>
+      <xloc>2827</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2329,8 +2934,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1185</xloc>
-      <yloc>568</yloc>
+      <xloc>533</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2359,7 +2964,7 @@
     <fileNameField>destino</fileNameField>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>&#x24;&#x7b;destination&#x7d;</name>
+      <name>C&#x3a;&#x5c;Users&#x5c;daniella&#x5c;Documents&#x5c;carga_flex&#x5c;txt_output&#x5c;txt_flex_comp</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>Y</do_not_open_new_file_init>
@@ -2392,8 +2997,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3558</xloc>
-      <yloc>653</yloc>
+      <xloc>2838</xloc>
+      <yloc>145</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2409,7 +3014,14 @@
            <schema_name/>
            </partitioning>
        <formula><field_name>outputFilename</field_name>
-<formula_string>&#x22;KF_BRA_&#x22; &#x2b; cod_mercador &#x2b; &#x22;_&#x22; &#x2b; data_arquivo &#x2b; &#x22;_&#x22; &#x2b; data_hoje  &#x2b; &#x22;_&#x22; &#x2b; batch_id</formula_string>
+<formula_string>&#x22;KF_BRA_&#x22; &#x2b; cod_mercador &#x2b; &#x22;_&#x22;&#x2b; data_hoje  &#x2b; &#x22;_&#x22; &#x2b; batch_id</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>destination</field_name>
+<formula_string>jpath &#x2b;&#x22;&#x5c;&#x5c;export&#x5c;&#x5c;&#x22;</formula_string>
 <value_type>String</value_type>
 <value_length>-1</value_length>
 <value_precision>-1</value_precision>
@@ -2417,14 +3029,91 @@
 </formula>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>808</xloc>
-      <yloc>451</yloc>
+      <xloc>3115</xloc>
+      <yloc>417</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>pego linha e comparador 020</name>
+    <name>pdv_codigo unico</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <count_rows>N</count_rows>
+      <count_field/>
+      <reject_duplicate_row>N</reject_duplicate_row>
+      <error_description/>
+    <fields>      <field>        <name>pdv_codigo</name>
+        <case_insensitive>N</case_insensitive>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1393</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>pego info pdv</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>carrego pdvs</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>pdv_codigo</name>
+        <field>pdv_codigo</field>
+      </key>
+      <value>
+        <name>pdv_razao_social</name>
+        <rename>pdv_razao_social</rename>
+        <default>NA</default>
+        <type>String</type>
+      </value>
+      <value>
+        <name>pdv_cnpj</name>
+        <rename>pdv_cnpj</rename>
+        <default>NA</default>
+        <type>String</type>
+      </value>
+      <value>
+        <name>pdv_cep</name>
+        <rename>pdv_cep</rename>
+        <default>NA</default>
+        <type>String</type>
+      </value>
+      <value>
+        <name>pdv_uf</name>
+        <rename>pdv_uf</rename>
+        <default>NA</default>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1570</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>pego linha, comparador e cod_mercador &#x5b;020&#x5d;</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2441,21 +3130,21 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
+      </field>      <field>        <name>cod_mercador</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2638</xloc>
-      <yloc>657</yloc>
+      <xloc>2281</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>pego linha e comparador 025</name>
+    <name>pego linha, comparador e cod_mercador &#x5b;025&#x5d;</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2472,21 +3161,21 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
+      </field>      <field>        <name>cod_mercador</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2638</xloc>
-      <yloc>865</yloc>
+      <xloc>2281</xloc>
+      <yloc>960</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>pego linhas e comparador 005</name>
+    <name>pego linha, comparador e cod_mercador &#x5b;005&#x5d;</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2503,21 +3192,21 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
+      </field>      <field>        <name>cod_mercador</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2638</xloc>
-      <yloc>451</yloc>
+      <xloc>2281</xloc>
+      <yloc>531</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>pego linhas e comparador 010</name>
+    <name>pego linha, comparador e cod_mercador &#x5b;010&#x5d;</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2534,21 +3223,21 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
+      </field>      <field>        <name>cod_mercador</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2638</xloc>
-      <yloc>240</yloc>
+      <xloc>2281</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>seleciono</name>
+    <name>seleciono &#x5b;005&#x5d;</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2577,21 +3266,17 @@
         <rename/>
         <length>50</length>
         <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2286</xloc>
-      <yloc>451</yloc>
+      <xloc>1867</xloc>
+      <yloc>531</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>seleciono .</name>
+    <name>seleciono &#x5b;020&#x5d;</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2636,7 +3321,7 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>VL_LIQUIDO_1</name>
+      </field>      <field>        <name>VL_LIQUIDO</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -2649,10 +3334,6 @@
         <length>-2</length>
         <precision>-2</precision>
       </field>      <field>        <name>VL_TOT_BONIF</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -2671,69 +3352,14 @@
         <storage_type/>
       </meta>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2227</xloc>
-      <yloc>657</yloc>
+      <xloc>1867</xloc>
+      <yloc>722</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>seleciono 010</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>      <field>        <name>cod_mercador</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>pdv_codigo</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>pdv_razao_social</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>pdv_uf</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>pdv_cep</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>data_emissao</name>
-        <rename>DT_INCLUSAO</rename>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>vendedor_cod_cadastro</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>pdv_cnpj</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>outputFilename</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>        <select_unspecified>N</select_unspecified>
-    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2048</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>sequencial_nota 2</name>
+    <name>sequencial_nota</name>
     <type>FieldsChangeSequence</type>
     <description/>
     <distribute>Y</distribute>
@@ -2752,8 +3378,8 @@
       </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1856</xloc>
-      <yloc>865</yloc>
+      <xloc>1453</xloc>
+      <yloc>960</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2762,16 +3388,16 @@
     <name>vendas</name>
     <type>TextFileInput</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <accept_filenames>Y</accept_filenames>
-    <passing_through_fields>Y</passing_through_fields>
-    <accept_field>filename</accept_field>
-    <accept_stepname>Write to log</accept_stepname>
+    <accept_filenames>N</accept_filenames>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_field/>
+    <accept_stepname/>
     <separator>&#x3b;</separator>
     <enclosure>&#x22;</enclosure>
     <enclosure_breaks>N</enclosure_breaks>
@@ -2791,12 +3417,12 @@
     <rownum>N</rownum>
     <rownumByFile>N</rownumByFile>
     <rownum_field/>
-    <format>mixed</format>
+    <format>DOS</format>
     <encoding/>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name/>
-      <filemask/>
+      <name>&#x24;&#x7b;JPATH&#x7d;</name>
+      <filemask>&#x28;&#x3f;i&#x29;.&#x2a;&#x5c;.csv&#x24;</filemask>
       <exclude_filemask/>
       <file_required>N</file_required>
       <include_subfolders>N</include_subfolders>
@@ -2958,11 +3584,11 @@
       </field>
       <field>
         <name>QT</name>
-        <type>Number</type>
-        <format>&#x23;,&#x23;&#x23;0.00</format>
+        <type>Integer</type>
+        <format>&#x23;</format>
         <currency>&#x24;</currency>
-        <decimal>,</decimal>
-        <group>.</group>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif>-</nullif>
         <ifnull/>
         <position>-1</position>
@@ -2973,11 +3599,11 @@
       </field>
       <field>
         <name>VLVENDA</name>
-        <type>Number</type>
-        <format>&#x23;,&#x23;&#x23;0.00</format>
+        <type>String</type>
+        <format>&#x23;.&#x23;</format>
         <currency>&#x24;</currency>
-        <decimal>,</decimal>
-        <group>.</group>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif>-</nullif>
         <ifnull/>
         <position>-1</position>
@@ -3033,7 +3659,7 @@
     <line_number_files_destination_directory/>
     <line_number_files_extension>line</line_number_files_extension>
     <date_format_lenient>Y</date_format_lenient>
-    <date_format_locale>en_US</date_format_locale>
+    <date_format_locale>pt_BR</date_format_locale>
     <shortFileFieldName/>
     <pathFieldName/>
     <hiddenFieldName/>
@@ -3044,8 +3670,1052 @@
     <sizeFieldName/>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>199</xloc>
-      <yloc>451</yloc>
+      <xloc>533</xloc>
+      <yloc>145</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Avalia conteudo do qtd_estoque</name>
+    <type>RegexEval</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <script><![CDATA[\s*\d+(\.\d+)?]]></script>    <matcher>qt_estoque</matcher>
+    <resultfieldname>numeric_eval</resultfieldname>
+    <usevar>N</usevar>
+    <allowcapturegroups>N</allowcapturegroups>
+    <replacefields>Y</replacefields>
+    <canoneq>N</canoneq>
+    <caseinsensitive>N</caseinsensitive>
+    <comment>N</comment>
+    <dotall>N</dotall>
+    <multiline>N</multiline>
+    <unicode>N</unicode>
+    <unix>N</unix>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>689</xloc>
+      <yloc>1673</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Calculo um sequencial para determinar 1st row</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>sequencial</valuename>
+      <use_database>N</use_database>
+      <connection/>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>533</xloc>
+      <yloc>1553</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Capturo a planilha incluindo cabecalho - que vai determinar a data do estoque</name>
+    <type>ExcelInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <header>N</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield/>
+    <sheetfield/>
+    <sheetrownumfield/>
+    <rownumfield/>
+    <sheetfield/>
+    <filefield/>
+    <limit>0</limit>
+    <encoding/>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field/>
+    <accept_stepname/>
+    <file>
+      <name>C&#x3a;&#x5c;Users&#x5c;Oncase&#x5c;Desktop&#x5c;Pos105.xls</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>firstCol</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>sku</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>descr_produto</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>tipo_posicao</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>qt_estoque</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+        <repeat>N</repeat>
+        <format>&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;.&#x23;&#x23;&#x23;</format>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>Report</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+        </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory/>
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory/>
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory/>
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+    <spreadsheet_type>JXL</spreadsheet_type>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>533</xloc>
+      <yloc>1441</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Eh linha totalizadora&#x3f;</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Sai pra l&#xe1; voc&#xea; tamb&#xe9;m</send_true_to>
+<send_false_to>Show do Milh&#xe3;o&#x21;</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>descr_produto</leftvalue>
+   <function>REGEXP</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>&#x28;&#x3f;i&#x29;.&#x2a;Itens.&#x2a;</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>OR</operator>
+   <leftvalue>tipo_posicao</leftvalue>
+   <function>REGEXP</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>&#x28;&#x3f;i&#x29;.&#x2a;Total.&#x2a;</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>883</xloc>
+      <yloc>1904</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Ent&#xe3;o XAU</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>502</xloc>
+      <yloc>1781</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get the date</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>Now a safe cast</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>dummyJoinKey</name>
+        <field>dummyJoinKey</field>
+      </key>
+      <value>
+        <name>data_estoque</name>
+        <rename>data_estoque</rename>
+        <default>19920101</default>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1183</xloc>
+      <yloc>1904</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Is this the 1st row&#x3f;</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Then this will become a DATE</send_true_to>
+<send_false_to>Projeta</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>sequencial</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>Integer</type><text>1</text><length>-1</length><precision>0</precision><isnull>N</isnull><mask>&#x23;&#x3b;-&#x23;</mask></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>904</xloc>
+      <yloc>1553</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Now a safe cast</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>data_estoque</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dummyJoinKey</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>data_estoque</name>
+        <rename>data_estoque</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyyMMdd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1183</xloc>
+      <yloc>1676</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Projection</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>sku</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>descr_produto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>qt_estoque</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>data_estoque</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dummyJoinKey</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>qt_estoque</name>
+        <rename>qt_estoque</rename>
+        <type>Number</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>0.00</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>sku</name>
+        <rename>sku</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1535</xloc>
+      <yloc>1904</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Projeta</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>sku</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>descr_produto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipo_posicao</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>qt_estoque</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sequencial</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dummyJoinKey</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>904</xloc>
+      <yloc>1673</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sai pra l&#xe1; voc&#xea; tamb&#xe9;m</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>883</xloc>
+      <yloc>2019</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Show do Milh&#xe3;o&#x21;</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1034</xloc>
+      <yloc>1904</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>String operations</name>
+    <type>StringOperations</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>sku</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>descr_produto</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>tipo_posicao</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>qt_estoque</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>data_estoque</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1303</xloc>
+      <yloc>1904</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Then this will become a DATE</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>sku</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dummyJoinKey</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>sku</name>
+        <rename>data_estoque</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1183</xloc>
+      <yloc>1553</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Vem pra c&#xe1;</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>689</xloc>
+      <yloc>1904</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>allToString</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>sku</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>descr_produto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>qt_estoque</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>data_estoque</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dummyJoinKey</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>sku</name>
+        <rename>sku</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>descr_produto</name>
+        <rename>descr_produto</rename>
+        <type>-</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>qt_estoque</name>
+        <rename>qt_estoque</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>data_estoque</name>
+        <rename>data_estoque</rename>
+        <type>-</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1535</xloc>
+      <yloc>1553</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>dummyJoinKey</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>dummyJoinKey</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>0</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>769</xloc>
+      <yloc>1553</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>valor do campo de quantidade eh num&#xe9;rico&#x3f;</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Vem pra c&#xe1;</send_true_to>
+<send_false_to>Ent&#xe3;o XAU</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>numeric_eval</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>Boolean</type><text>Y</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>689</xloc>
+      <yloc>1781</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>030</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1039</xloc>
+      <yloc>1148</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>gero constantes &#x5b;030&#x5d;</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>comparador</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>030</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>dummyKey030</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>0</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PRODUCTO_KRAFT</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif> </nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ID_APRESENTACAO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif> </nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>STOCK_MINIMO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif> </nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1287</xloc>
+      <yloc>1148</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>lookup fluxo principal</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>gero constantes &#x5b;030&#x5d;</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>dummyJoinKey</name>
+        <field>dummyKey030</field>
+      </key>
+      <value>
+        <name>cod_mercador</name>
+        <rename>cod_mercador</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>comparador</name>
+        <rename>comparador</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>PRODUCTO_KRAFT</name>
+        <rename>PRODUCTO_KRAFT</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>ID_APRESENTACAO</name>
+        <rename>ID_APRESENTACAO</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>STOCK_MINIMO</name>
+        <rename>STOCK_MINIMO</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1535</xloc>
+      <yloc>1148</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ajusto dados &#x5b;030&#x5d;</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Funcoes&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca Empty no final&#xd;&#xa;var colocaEmpty &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return s&#x2b;&#x22;                                  &#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Coloca leading zeros&#xd;&#xa;var leadingZeros &#x3d; function&#x28;s&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	return String&#x28;&#x22;00000000000000000000&#x22;&#x29; &#x2b; String&#x28;s&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xd;&#xa; &#x2a;  Implementacao&#xd;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a; &#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;calcula tamanho do decimal para vl_liquido receber 00, 0 ou nao receber nada no final&#xd;&#xa;var tamanho_decimal &#x3d; &#x28;qt_estoque.indexOf&#x28;&#x22;,&#x22;&#x29;&#x21;&#x3d;-1&#x29; &#x3f; &#x28;qt_estoque.substring&#x28;qt_estoque.indexOf&#x28;&#x22;,&#x22;&#x29;,&#x28;qt_estoque.length-1&#x29;&#x29;&#x29;.length &#x3a;0 &#x2f;&#x2f;calcula tamanho decimal&#xd;&#xa;var qt_estoque &#x3d; &#x28;tamanho_decimal &#x21;&#x3d; 0&#x29; &#x3f; &#x28;tamanho_decimal&#x3d;&#x3d;1&#x29;&#x3f; qt_estoque&#x2b;&#x27;0&#x27; &#x3a; qt_estoque.substring&#x28;0,&#x28;qt_estoque.indexOf&#x28;&#x22;,&#x22;&#x29;&#x2b;3&#x29;&#x29; &#x3a; qt_estoque&#x2b;&#x22;00&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;qt_estoque &#x3d; qt_estoque.replace&#x28;&#x22;,&#x22;,&#x22;&#x22;&#x29;&#x3b; &#x2f;&#x2f;remove virgula&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem colocaEmpty&#xd;&#xa;var PRODUCTO_KRAFT &#x3d; colocaEmpty&#x28;PRODUCTO_KRAFT&#x29;&#x3b;&#xd;&#xa;PRODUCTO_KRAFT &#x3d; PRODUCTO_KRAFT.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var ID_APRESENTACAO &#x3d; colocaEmpty&#x28;ID_APRESENTACAO&#x29;&#x3b;&#xd;&#xa;ID_APRESENTACAO &#x3d; ID_APRESENTACAO.substring&#x28;0,3&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var sku &#x3d; colocaEmpty&#x28;sku&#x29;&#x3b;&#xd;&#xa;sku &#x3d; sku.substring&#x28;0,20&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;Campos que recebem leadingZeros&#xd;&#xa;var STOCK_MINIMO &#x3d; leadingZeros&#x28;STOCK_MINIMO&#x29;&#x3b;&#xd;&#xa;STOCK_MINIMO &#x3d; STOCK_MINIMO.substring&#x28;0,18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;qt_estoque &#x3d; leadingZeros&#x28;qt_estoque&#x29;&#x3b;&#xd;&#xa;var i &#x3d; qt_estoque.length&#x3b;&#xd;&#xa;qt_estoque &#x3d; qt_estoque.substring&#x28;i, i-18&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var cod_mercador &#x3d; leadingZeros&#x28;cod_mercador&#x29;&#x3b;&#xd;&#xa;var i &#x3d; cod_mercador.length&#x3b;&#xd;&#xa;cod_mercador &#x3d; cod_mercador.substring&#x28;i,i-10&#x29;&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>qt_estoque</name>
+        <rename>qt_estoque</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>PRODUCTO_KRAFT</name>
+        <rename>PRODUCTO_KRAFT</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>ID_APRESENTACAO</name>
+        <rename>ID_APRESENTACAO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>sku</name>
+        <rename>sku</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>STOCK_MINIMO</name>
+        <rename>STOCK_MINIMO</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>cod_mercador</name>
+        <rename>cod_mercador</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1783</xloc>
+      <yloc>1148</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>monto linha &#x5b;030&#x5d;</name>
+    <type>Janino</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>linha</field_name>
+<formula_string>comparador&#x2b;cod_mercador&#x2b;data_estoque&#x2b;PRODUCTO_KRAFT&#x2b;ID_APRESENTACAO&#x2b;sku&#x2b;qt_estoque&#x2b;STOCK_MINIMO</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>2031</xloc>
+      <yloc>1148</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>pego linha, comparador e cod_mercador &#x5b;030&#x5d;</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>comparador</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linha</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cod_mercador</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>2281</xloc>
+      <yloc>1148</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
