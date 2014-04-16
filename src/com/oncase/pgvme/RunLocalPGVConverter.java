@@ -29,6 +29,7 @@ package com.oncase.pgvme;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 
 import org.pentaho.di.core.KettleEnvironment;
@@ -104,14 +105,15 @@ public class RunLocalPGVConverter {
 	 * transformation.
 	 * @author marpontes
 	 * @return the path on the filesystem till the JAR file
+	 * @throws UnsupportedEncodingException 
 	 */
-	private String getPathParam(){
+	private String getPathParam() throws UnsupportedEncodingException{
 		
 		String path = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
 		
 		path = path.substring(0,path.lastIndexOf("/"));
 		
-		return path;
+		return java.net.URLDecoder.decode(path,"UTF-8");
 		
 	}
 	
@@ -148,7 +150,7 @@ public class RunLocalPGVConverter {
 			
 			// assign the value to the parameter on the transformation
 			
-			final String source = getPathParam()+"/";
+			final String source = getPathParam()  +"/";
 			final String destination = source+"export/";
 			
 			
