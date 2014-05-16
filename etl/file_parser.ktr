@@ -27,7 +27,7 @@
 <size_limit_lines/>
 <interval/>
 <timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
 <perf-log-table><connection/>
 <schema/>
 <table/>
@@ -44,6 +44,11 @@
 <table/>
 <timeout_days/>
 <field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
     </log>
     <maxdate>
       <connection/>
@@ -257,11 +262,14 @@
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
+    <read_only>true</read_only>
     <attributes>
       <attribute><code>EXTRA_OPTION_INFOBRIGHT.characterEncoding</code><attribute>UTF-8</attribute></attribute>
       <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
       <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
       <attribute><code>PORT_NUMBER</code><attribute>50006</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
     </attributes>
   </connection>
   <connection>
@@ -487,6 +495,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -505,6 +514,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -523,6 +533,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -541,6 +552,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -559,6 +571,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -577,6 +590,7 @@
     <type>RegexEval</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -609,6 +623,7 @@
     <type>Sequence</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -637,6 +652,7 @@
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -652,7 +668,7 @@
     <sheetfield/>
     <filefield/>
     <limit>0</limit>
-    <encoding/>
+    <encoding>ISO-8859-1</encoding>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <accept_filenames>N</accept_filenames>
     <accept_field/>
@@ -732,6 +748,11 @@
         <startrow>0</startrow>
         <startcol>0</startcol>
         </sheet>
+      <sheet>
+        <name>Relat&#xf3;rio</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+        </sheet>
     </sheets>
     <strict_types>N</strict_types>
     <error_ignored>N</error_ignored>
@@ -764,6 +785,7 @@
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -804,6 +826,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -822,6 +845,7 @@
     <type>GetVariable</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -866,6 +890,7 @@
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -901,6 +926,7 @@
     <type>IfNull</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -910,6 +936,7 @@
       <replaceAllMask/>
       <selectFields>Y</selectFields>
       <selectValuesType>N</selectValuesType>
+      <setEmptyStringAll>Y</setEmptyStringAll>
     <valuetypes>
       </valuetypes>
     <fields>
@@ -917,6 +944,7 @@
         <name>VLVENDA</name>
         <value>0</value>
         <mask/>
+        <set_empty_string>N</set_empty_string>
         </field>
       </fields>
      <cluster_schema/>
@@ -932,6 +960,7 @@
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -960,6 +989,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -981,6 +1011,9 @@
         <precision>-2</precision>
         <conversion_mask>yyyyMMdd</conversion_mask>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -999,6 +1032,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1032,6 +1066,9 @@
         <precision>-2</precision>
         <conversion_mask>0.00</conversion_mask>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -1044,6 +1081,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -1062,6 +1102,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1105,6 +1146,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1123,6 +1165,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1141,6 +1184,7 @@
     <type>StringOperations</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1226,6 +1270,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1247,6 +1292,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -1265,6 +1313,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1283,6 +1332,7 @@
     <type>WriteToLog</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1290,6 +1340,8 @@
            </partitioning>
       <loglevel>log_level_basic</loglevel>
       <displayHeader>Y</displayHeader>
+      <limitRows>N</limitRows>
+      <limitRowsNumber>5</limitRowsNumber>
       <logmessage>&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#xa;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;&#x23;</logmessage>
     <fields>
       <field>
@@ -1312,6 +1364,7 @@
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1347,6 +1400,7 @@
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1430,6 +1484,7 @@
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1489,6 +1544,7 @@
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1560,6 +1616,7 @@
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1619,6 +1676,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1652,6 +1710,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -1659,11 +1720,14 @@
         <storage_type/>
       </meta>      <meta>        <name>descr_produto</name>
         <rename>descr_produto</rename>
-        <type>-</type>
+        <type>None</type>
         <length>-2</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -1676,6 +1740,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -1683,11 +1750,14 @@
         <storage_type/>
       </meta>      <meta>        <name>data_estoque</name>
         <rename>data_estoque</rename>
-        <type>-</type>
+        <type>None</type>
         <length>-2</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -1706,6 +1776,7 @@
     <type>GetVariable</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1738,6 +1809,7 @@
     <type>TextFileInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2075,6 +2147,7 @@
     <type>GetFileNames</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2113,6 +2186,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2162,6 +2236,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -2174,6 +2251,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -2192,6 +2272,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2261,6 +2342,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -2279,6 +2363,7 @@
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2295,6 +2380,7 @@
         <nullif>14273817</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -2310,6 +2396,7 @@
     <type>Unique</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2336,6 +2423,7 @@
     <type>ConcatFields</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2416,6 +2504,7 @@
     <type>SystemInfo</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2444,6 +2533,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2457,6 +2547,9 @@
         <precision>-2</precision>
         <conversion_mask>yyyyMMddHHmmss</conversion_mask>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -2475,6 +2568,7 @@
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2491,6 +2585,7 @@
         <nullif>0</nullif>
         <length>-1</length>
         <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -2506,6 +2601,7 @@
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2522,6 +2618,7 @@
         <nullif>005</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>ACAO</name>
@@ -2533,6 +2630,7 @@
         <nullif>A</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -2548,6 +2646,7 @@
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2564,6 +2663,7 @@
         <nullif>NA</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>COND_PAGO</name>
@@ -2575,6 +2675,7 @@
         <nullif>000</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>LIM_CREDITO</name>
@@ -2586,6 +2687,7 @@
         <nullif>9999999999999</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>CATEG_CLIE</name>
@@ -2597,6 +2699,7 @@
         <nullif>0</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>comparador</name>
@@ -2608,6 +2711,7 @@
         <nullif>010</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -2623,6 +2727,7 @@
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2639,6 +2744,7 @@
         <nullif>020</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>tipo_documento</name>
@@ -2650,6 +2756,7 @@
         <nullif>1</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>DT_VENCIMENTO</name>
@@ -2661,6 +2768,7 @@
         <nullif>19990101</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>COND_PAGO</name>
@@ -2672,6 +2780,7 @@
         <nullif>V</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>QT_LINHAS</name>
@@ -2683,6 +2792,7 @@
         <nullif>7777</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>VL_ICMS</name>
@@ -2694,6 +2804,7 @@
         <nullif>888888888888888888</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>VL_TOT_BONIF</name>
@@ -2705,6 +2816,7 @@
         <nullif>999999999999999999</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -2720,6 +2832,7 @@
     <type>Constant</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2736,6 +2849,7 @@
         <nullif>025</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>tipo_documento</name>
@@ -2747,6 +2861,7 @@
         <nullif>1</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>PRODUTO_KRAFT</name>
@@ -2758,6 +2873,7 @@
         <nullif> </nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>ID_APRESENTACAO</name>
@@ -2769,6 +2885,7 @@
         <nullif> </nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>VL_BRUTO</name>
@@ -2780,6 +2897,7 @@
         <nullif>000000000000000999</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>VL_ICMS</name>
@@ -2791,6 +2909,7 @@
         <nullif>000000000000000888</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>ID_BONIF</name>
@@ -2802,6 +2921,7 @@
         <nullif>N</nullif>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -2817,6 +2937,7 @@
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2833,6 +2954,7 @@
         <nullif>030</nullif>
         <length>-1</length>
         <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>dummyKey030</name>
@@ -2844,6 +2966,7 @@
         <nullif>0</nullif>
         <length>-1</length>
         <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>PRODUCTO_KRAFT</name>
@@ -2855,6 +2978,7 @@
         <nullif> </nullif>
         <length>-1</length>
         <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>ID_APRESENTACAO</name>
@@ -2866,6 +2990,7 @@
         <nullif> </nullif>
         <length>-1</length>
         <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>STOCK_MINIMO</name>
@@ -2877,6 +3002,7 @@
         <nullif> </nullif>
         <length>-1</length>
         <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -2892,6 +3018,7 @@
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2910,6 +3037,7 @@
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2975,6 +3103,7 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3000,6 +3129,7 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3025,6 +3155,7 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3050,6 +3181,7 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3075,6 +3207,7 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3100,6 +3233,7 @@
     <type>CheckSum</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3136,6 +3270,7 @@
     <type>Unique</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3160,6 +3295,7 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3192,6 +3328,7 @@
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3209,6 +3346,7 @@
         <name>pdv_codigo</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -3224,6 +3362,7 @@
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3241,6 +3380,7 @@
         <name>comparador</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -3256,6 +3396,7 @@
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3273,16 +3414,19 @@
         <name>cod_mercador</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
       <field>
         <name>CODUSUR</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
       <field>
         <name>numero_documento</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -3298,6 +3442,7 @@
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3361,6 +3506,7 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3386,6 +3532,7 @@
     <type>Unique</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3410,6 +3557,7 @@
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3463,6 +3611,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3498,6 +3647,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3533,6 +3683,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3568,6 +3719,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3603,6 +3755,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3638,6 +3791,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3687,6 +3841,9 @@
         <precision>-2</precision>
         <conversion_mask>yyyyMMdd</conversion_mask>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -3705,6 +3862,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3748,6 +3906,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3813,6 +3972,9 @@
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
         <encoding/>
         <decimal_symbol/>
         <grouping_symbol/>
@@ -3831,6 +3993,7 @@
     <type>FieldsChangeSequence</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3857,6 +4020,7 @@
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3885,6 +4049,7 @@
     <type>TextFileInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -4177,4 +4342,5 @@
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
+
 </transformation>
